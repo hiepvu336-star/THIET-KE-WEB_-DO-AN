@@ -1,0 +1,340 @@
+/* Admin Page Specific Styles */
+.admin-header {
+    background-color: #34495e;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.admin-header h1 {
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.admin-header nav ul li a {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.admin-header nav ul li a:hover {
+    color: #ffd700;
+}
+
+.admin-main {
+    padding-top: 30px;
+    min-height: calc(100vh - 120px); /* Adjust based on header/footer height */
+}
+
+.admin-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.admin-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 15px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.controls input[type="text"],
+.controls select {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    flex: 1; /* Allow items to grow */
+    min-width: 200px; /* Minimum width for inputs/selects */
+}
+
+.controls .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.table-responsive {
+    overflow-x: auto; /* Makes table scrollable horizontally on small screens */
+}
+
+#orderTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#orderTable th,
+#orderTable td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#orderTable th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #555;
+    white-space: nowrap; /* Prevent headers from wrapping */
+}
+
+#orderTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#orderTable tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Status styling in table */
+.status-pending { color: #f39c12; font-weight: bold; } /* Orange */
+.status-confirmed { color: #28a745; font-weight: bold; } /* Green */
+.status-delivering { color: #007bff; font-weight: bold; } /* Blue */
+.status-delivered { color: #2c3e50; font-weight: bold; } /* Dark Blue */
+.status-cancelled { color: #dc3545; font-weight: bold; } /* Red */
+
+/* Action buttons in table */
+#orderTable .action-btns button {
+    padding: 8px 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+    white-space: nowrap;
+}
+
+/* Modal for order details/edit */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 5% from the top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 90%; /* Could be more responsive */
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+.modal-content h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.modal-content h4 {
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    font-size: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.modal-content p {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.modal-content p strong {
+    color: #444;
+}
+
+#modalOrderItems {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#modalOrderItems li {
+    background-color: #f9fbfd;
+    border: 1px solid #e1e8ed;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: #34495e;
+}
+
+.modal-content .form-group {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.modal-content label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+.modal-content select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.modal-content button {
+    margin-top: 20px;
+    width: auto;
+    padding: 12px 25px;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.empty-message {
+    text-align: center;
+    color: #777;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .admin-header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .admin-header nav ul {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .admin-header nav ul li {
+        margin: 5px 10px;
+    }
+    .controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .controls input,
+    .controls select,
+    .controls .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .modal-content {
+        margin: 20px auto;
+        padding: 20px;
+    }
+    #orderTable th, #orderTable td {
+        padding: 8px;
+        font-size: 14px;
+    }
+    #orderTable .action-btns button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
+
+.contact-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Kích thước icon */
+    height: 50px;
+    border-radius: 50%; /* Hình tròn */
+    background-color: #007bff; /* Màu nền mặc định */
+    color: white; /* Màu chữ/icon */
+    font-size: 24px; /* Kích thước icon */
+    text-decoration: none; /* Bỏ gạch chân */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển động mượt */
+}
+
+.contact-icon:hover {
+    transform: translateY(-5px) scale(1.05); /* Hiệu ứng nhấc lên và phóng to khi hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Các màu cụ thể cho từng icon (tùy chọn) */
+.phone-icon {
+    background-color: #28a745; /* Màu xanh lá cho điện thoại */
+}
+
+.zalo-icon {
+    background-color: #0084ff; /* Màu xanh Zalo */
+}
+
+.messenger-icon {
+    background-color: #6c5ce7; /* Màu tím Messenger */
+}
+
+/* Responsive cho màn hình nhỏ hơn nếu cần */
+@media (max-width: 768px) {
+    .contact-fixed {
+        right: 10px;
+        bottom: 10px;
+        gap: 10px;
+    }
+    .contact-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+    }
+}
+.contact-icon {
+ font-size: 24px;
+}

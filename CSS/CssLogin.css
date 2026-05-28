@@ -1,0 +1,114 @@
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffd700;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+body {
+  background: #f8f9fa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.login-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+footer a.btn-outline-light:hover {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #000;
+}
+
+.custom-navbar {
+  background: linear-gradient(to right, #1a2235, #2c3e50); /* màu giống hình */
+}
+
+.custom-navbar .nav-link {
+  color: #fff;
+  position: relative;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+  color: #00ffff; /* màu sáng xanh nhạt */
+}
+
+.custom-navbar .nav-link.active::after,
+.custom-navbar .nav-link:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #00ffff; /* gạch dưới xanh dương sáng */
+  border-radius: 2px;}
+
+  .contact-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Kích thước icon */
+    height: 50px;
+    border-radius: 50%; /* Hình tròn */
+    background-color: #007bff; /* Màu nền mặc định */
+    color: white; /* Màu chữ/icon */
+    font-size: 24px; /* Kích thước icon */
+    text-decoration: none; /* Bỏ gạch chân */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển động mượt */
+}
+
+.contact-icon:hover {
+    transform: translateY(-5px) scale(1.05); /* Hiệu ứng nhấc lên và phóng to khi hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Các màu cụ thể cho từng icon (tùy chọn) */
+.phone-icon {
+    background-color: #28a745; /* Màu xanh lá cho điện thoại */
+}
+
+.zalo-icon {
+    background-color: #0084ff; /* Màu xanh Zalo */
+}
+
+.messenger-icon {
+    background-color: #6c5ce7; /* Màu tím Messenger */
+}
+
+/* Responsive cho màn hình nhỏ hơn nếu cần */
+@media (max-width: 768px) {
+    .contact-fixed {
+        right: 10px;
+        bottom: 10px;
+        gap: 10px;
+    }
+    .contact-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+    }
+}
+.contact-icon {
+ font-size: 24px;
+}
