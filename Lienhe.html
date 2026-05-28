@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu</title>
+    <style>
+        @font-face {font-family: "SFProDisplay";src: url("../font/SFPRODISPLAY/SFProDisplay-Regular.ttf") format("truetype");font-weight: 400;font-display: fallback;}
+@font-face {font-family: "SFProDisplay";src: url("../font/SFPRODISPLAY/SFProDisplay-Light.ttf") format("truetype");font-weight: 300;font-display: fallback;}
+@font-face {font-family: "SFProDisplay";src: url("../font/SFPRODISPLAY/SFProDisplay-Medium.ttf") format("truetype");font-weight: 500;font-display: fallback;}
+@font-face {font-family: "SFProDisplay";src: url("../font/SFPRODISPLAY/SFProDisplay-Bold.ttf") format("truetype");font-weight: bold;font-display: fallback;}
+@font-face {font-family: "SFProDisplay";src: url("../font/SFPRODISPLAY/SFProDisplay-Semibold.ttf") format("truetype");font-weight: 600;font-display: fallback;}
+@font-face {font-family: "SFProDisplay";src: url("../font/SFPRODISPLAY/SFProDisplay-Heavy.ttf") format("truetype");font-weight: 800;font-display: fallback;}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+:root {
+    --red: #b5292f;
+    --lightest-gray: rgb(249, 249, 249);
+    --lighter-gray: rgb(240, 240, 240);
+    --light-gray: rgb(144, 144, 144);
+    --medium-gray: rgb(96, 96, 96);
+    --dark-gray: rgb(13, 13, 13);
+    --header-height: 60px;
+    --animation-duration: 200ms;
+    --animation-timing-curve: ease-in-out;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 3px;
+    /* height:50px; */
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #fafafa;
+}
+
+body::-webkit-scrollbar-thumb {
+    /* background: rgba(0, 0, 0, 0); */
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.3) 0 0 0 1px;
+    box-shadow: rgba(255, 255, 255, 0.3) 0 0 0 1px;
+}
+
+body {
+    margin: 0;
+    font-family: "SF Pro Display", sans-serif;
+    overflow-x: hidden;
+}
+        .container {
+    display: flex;
+}
+
+
+      
+        .header-banner {
+            background-color: #add8e6; /* Light blue color, adjust if needed */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 15px; /* Space between icons and text */
+        }
+
+        .support-icon {
+            width: 60px; /* Adjust size as needed */
+            height: 60px; /* Adjust size as needed */
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.3); /* Example background for placeholder icons */
+            /* Để chèn hình ảnh thật, bạn sẽ dùng: background-image: url('duong_dan_den_hinh_anh.png'); background-size: cover; */
+        }
+
+        .form-section {
+            padding: 30px;
+        }
+
+        .form-section > p {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="tel"],
+        .form-group textarea {
+            width: calc(100% - 20px); /* Adjust for padding */
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #888;
+            outline: none;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .submit-button {
+            background-color: #ff4d4d; /* Red color */
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            display: block;
+            width: fit-content;
+            margin: 0 auto; /* Center the button */
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-button:hover {
+            background-color: #e60000;
+        }
+
+        .thank-you-message {
+            background-color: #d4edda; /* Light green */
+            color: #155724; /* Dark green text */
+            border: 1px solid #c3e6cb;
+            border-radius: 4px;
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: bold;
+            display: none; /* Hidden by default */
+        }
+
+        .thank-you-message.hidden {
+            display: none;
+        }
+
+        .thank-you-message.visible {
+            display: block;
+        }
+
+    </style>
+
+<link href="CSS/vot.css" rel="stylesheet" type="text/css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="CSS/all.min.css">
+<link href="font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+      <!---Header-->
+      <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="logo">
+
+                    G9sport
+                </div>
+                <div class="header-right">
+                    <div class="search-box">
+                        <form class="d-flex">
+                            <input class="form-control  me-2" id="searchInput" type="search" placeholder="Tìm kiếm...">
+                            <button class="btn btn-outline-light" type="submit">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="user-actions">
+                    <a href="GioHang.html" class="cart-icon">🛒</a>
+                    <a href="Admin.html">👤</a>
+                    <li class="has-submenu">
+                        <a href="#">💁‍♂️</a>
+                        <div class="submenu">
+                            <a href="DangNhap.html"> Đăng Xuất</a>
+
+                        </div>
+                    </li>
+
+
+                </div>
+            </div>
+        </div>
+        </div>
+        <nav class="main-nav">
+            <div class="nav-container">
+ <ul class="nav-menu">
+                    <li><a href="Home.html">Trang chủ</a></li>
+                    <li><a href="HotNew.html">NEW & HOT</a></li>
+                    <li><a href="TrangSanPham.html">Sản Phẩm</a></li>
+                    <li><a href="Gioithieu.html">Giới Thiệu</a></li>
+                    <li><a href="tintuc.html">Tin tức</a></li>
+                    <li><a href="Lienhe.html"class="active">Liên hệ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+   
+<br>
+<br><br>
+<br>
+<br>
+    <div class="container">
+        <div class="header-banner">
+            <div class="header-content">
+                <img src="image_GioiThieu/l4.jpg" alt="Support Icon 1" class="support-icon">
+                <p>XIN CHÀO, CHÚNG TÔI Ở ĐÂY ĐỂ HỖ TRỢ BẠN!</p>
+                <img src="image_GioiThieu/l4.jpg" alt="Support Icon 2" class="support-icon">
+            </div>
+        </div>
+
+        <div class="form-section">
+            <p>Chúng tôi mong muốn lắng nghe ý kiến của quý khách. Vui lòng gửi mọi yêu cầu, thắc mắc theo thông tin bên dưới, chúng tôi sẽ liên lạc với bạn sớm nhất có thể.</p>
+
+            <div id="thankYouMessage" class="thank-you-message hidden">
+                Cảm ơn bạn đã liên hệ với chúng tôi. Chúng tôi sẽ trả lời bạn sớm nhất có thể.
+            </div>
+<br>
+<br>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="fullName">HỌ VÀ TÊN*</label>
+                    <input type="text" id="fullName" placeholder="Nhập họ và tên" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">EMAIL*</label>
+                    <input type="email" id="email" placeholder="Nhập địa chỉ Email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">ĐIỆN THOẠI*</label>
+                    <input type="tel" id="phone" placeholder="Nhập số điện thoại" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="content">NỘI DUNG*</label>
+                    <textarea id="content" placeholder="Nội dung liên hệ" rows="6" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">GỬI TIN NHẮN</button>
+            </form>
+        </div>
+    </div>
+    <center>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.7106008818077!2d106.62710463897545!3d10.806553824327018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752be27d8b4f4d%3A0x92dcba2950430867!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBUaMawxqFuZyBUUC4gSOG7kyBDaMOtIE1pbmggKEhVSVQp!5e1!3m2!1svi!2s!4v1749562112112!5m2!1svi!2s" 
+          width="80%" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </center>
+            <!--Footer-->
+            <footer class="bg-dark text-white pt-5 pb-4">
+                <div class="container text-center text-md-start">
+                  <div class="row">
+                    <div class="col-md-4 mb-4">
+                      <h5 class="text-uppercase fw-bold text-warning">
+                        WEB BÁN VỢT CẦU LÔNG UY TÍN
+                      </h5>
+                      <hr
+                        class="mb-3 mt-0 d-inline-block mx-auto"
+                        style="width: 80px; background-color: #ffc107; height: 2px"
+                      />
+                      <p>
+                        Cung cấp những cây vợt chính hãng, chất lượng cao
+                        <br>
+                        nhiều ưu đãi hấp dẫn
+                      </p>
+                    </div>
+          
+                    <div class="col-md-4 mb-4">
+                      <h5 class="text-uppercase fw-bold text-warning">Liên hệ</h5>
+                      <hr
+                        class="mb-3 mt-0 d-inline-block mx-auto"
+                        style="width: 80px; background-color: #ffc107; height: 2px"
+                      />
+                      <p>
+                        <i class="fas fa-map-marker-alt me-2"></i> 140 Tây Thạnh, Tân Phú,
+                        TP.HCM
+                      </p>
+                      <p><i class="fas fa-envelope me-2"></i> hotro@badmintonshop.vn</p>
+                      <p><i class="fas fa-phone me-2"></i> 1900999999</p>
+                    </div>
+          
+                    <div class="col-md-4 mb-4">
+                      <h5 class="text-uppercase fw-bold text-warning">Mạng xã hội</h5>
+                      <hr
+                        class="mb-3 mt-0 d-inline-block mx-auto"
+                        style="width: 80px; background-color: #ffc107; height: 2px"
+                      />
+                      <p>
+                        <a href="#" class="text-white text-decoration-none me-3"
+                          ><i class="fab fa-facebook-f"></i
+                        ></a>
+                        <a href="#" class="text-white text-decoration-none me-3"
+                          ><i class="fab fa-instagram"></i
+                        ></a>
+                        <a href="#" class="text-white text-decoration-none me-3"
+                          ><i class="fab fa-twitter"></i
+                        ></a>
+                        <a href="#" class="text-white text-decoration-none"
+                          ><i class="fab fa-youtube"></i
+                        ></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+          
+                <div
+                  class="text-center py-3"
+                  style="background-color: rgba(255, 255, 255, 0.05)"
+                >
+                  © 2025 Web bán vợt cầu lông. All rights reserved.
+                </div>
+                 <div class="contact-fixed">
+        <a href="tel:[Số điện thoại của bạn]" class="contact-icon phone-icon" aria-label="Gọi điện">
+            <img src="https://png.pngtree.com/png-vector/20191027/ourmid/pngtree-calling-telephone-line-icon-vector-png-image_1885981.jpg" alt="Điện thoại">
+        </a>
+        <a href="https://zalo.me/[Số Zalo của bạn]" target="_blank" class="contact-icon zalo-icon" aria-label="Chat Zalo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Icon_of_Zalo.svg/800px-Icon_of_Zalo.svg.png" alt="Zalo">
+        </a>
+        <a href="https://m.me/[ID Facebook Messenger của bạn]" target="_blank" class="contact-icon messenger-icon" aria-label="Chat Messenger">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/2048px-2023_Facebook_icon.svg.png" alt="Messenger">
+        </a>
+    </div>
+              </footer>
+        <script>
+       
+       document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            const thankYouMessage = document.getElementById('thankYouMessage');
+
+            contactForm.addEventListener('submit', function(event) {
+                event.preventDefault(); 
+
+                contactForm.style.display = 'none';
+
+                
+                thankYouMessage.classList.remove('hidden');
+                thankYouMessage.classList.add('visible');
+
+                
+            });
+        });
+      
+        </script>
+</body>
+</html>

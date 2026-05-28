@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G9sport - Cửa Hàng Vợt Cầu Lông Chuyên Nghiệp</title>
+    <link href="CSS/LINING.css" rel="stylesheet" type="text/css">
+    
+    <link href="CSS/all.min.css" rel="stylesheet">
+    <link href="CSS/fontawesome.min.css" rel="stylesheet">
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link href="font/bootstrap-icons.css" rel="stylesheet">
+    <link href="font/bootstrap-icons.json" rel="stylesheet">
+    <link href="font/bootstrap-icons.min.css"rel="stylesheet">
+    <link href="font/bootstrap-icons.scss" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="logo">
+                    G9sport
+                </div>
+                <div class="header-right">
+                    <div class="search-box">
+                        <input type="text" placeholder="Tìm kiếm...">
+                        <button type="submit">🔍</button>
+                    </div>
+                    <div class="user-actions">
+                        <a href="#" class="cart-icon">🛒</a>
+                        <a href="#">👤</a>
+                        <a href="#">❤️</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="nav-container">
+                 <ul class="nav-menu">
+                    <li><a href="Home.html" >Trang chủ</a></li>
+                    <li><a href="HotNew.html">NEW & Nổi Bật</a></li>
+                    <li><a href="TrangSanPham.html" class="active">Sản Phẩm</a></li>
+                    <li><a href="Gioithieu.html">Giới Thiệu</a></li>
+                    <li><a href="tintuc.html">Tin tức</a></li>
+                    <li><a href="Lienhe.html">Liên hệ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+   
+    <!--------------------------------------------------------------------->
+
+
+<div class="container ">
+  <div class="row w-100 mx-auto">
+   
+<div class="col-md-4 text-center">
+   
+    <img id="mainImage" src="image_VNB/SPVNB.webp" class="img-fluid mb-3" alt="Vợt cầu lông">
+
+    <div class="d-flex justify-content-center gap-2">
+        <img src="image_VNB/SPVNB.webp" class="img-thumbnail thumb" width="60">
+
+    </div>
+  </div>
+
+
+    <!-- Thông tin -->
+    <div class="col-md-8">
+      <h2>Vợt cầu lông VNB V88 xanh chính hãng</h2>
+      <p>Mã: <span class="text-danger">VNB012008</span> | Tình trạng: <span class="text-success">Còn hàng</span></p>
+      <h5 class="text-danger fw-bold">638.000 đ<del class="text-muted fs-6 ms-2">758.000 ₫</del></h5>
+
+
+      <!-- Ưu đãi -->
+      <div class="border p-3 rounded">
+        <h6 class="text-danger"><i class="bi bi-gift-fill"></i> ƯU ĐÃI</h6>
+        <ul class="list-unstyled">
+          <li>🎁 Tặng 2 quấn cán vợt :VNB 001, VS002 hoặc Joto 001</li>
+          <li>✅ Sản phẩm cam kết chính hãng</li>
+          <li>✅ Bảo hành chính hãng</li>
+         <li>✅ Thanh toán sau khi kiểm tra và nhận hàng</li>
+        </ul>
+        <hr>
+        <h6 class="text-black">Ưu đãi thêm khi mua sản phẩm tại <b>VNB Premium</b></h6>
+        <ul class="list-unstyled">
+          <li>✅ Sơn logo miễn phí</li>
+          <li>✅ Bảo hành lưới đan 72 giờ</li>
+          <li>✅ Thay gen miễn phí trọn đời</li>
+        </ul>
+      </div>
+
+      <!-- nút -->
+<div class="d-flex align-items-center mt-3 gap-3" >
+  <div class="input-group" style="width: 100px;">
+    <button class="btn btn-outline-secondary" type="button" id="decreaseBtn">-</button>
+    <input type="text" class="form-control text-center" value="1" id="quantityInput">
+    <button class="btn btn-outline-secondary" type="button" id="increaseBtn">+</button>
+  </div>
+  <button class="btn btn-danger text-white fw-bold"
+        id="addToCartDetailBtn"
+        data-product-id="VNB V88 xanh"
+        data-product-name="Vợt cầu lông VNB V88 xanh chính hãng"
+        data-product-price="638000"
+        data-product-image="image_VNB/SPVNB.webp">
+    THÊM VÀO GIỎ HÀNG
+</button> 
+</div>
+    </div>
+</p>
+<!--------------------------------------------BỐ CỤC 2 PHẦN NAVS VÀ CONTAINER-------------------------------------------------->
+<ul class="nav nav-tabs mb-4" id="productTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active text-danger fw-bold" id="desc-tab" data-bs-toggle="tab" data-bs-target="#desc" type="button" role="tab">
+      MÔ TẢ SẢN PHẨM
+    </button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link text-dark fw-bold" id="spec-tab" data-bs-toggle="tab" data-bs-target="#spec" type="button" role="tab">
+      THÔNG SỐ KỸ THUẬT
+    </button>
+  </li>
+</ul>
+<div class="tab-content" id="productTabContent">
+  <div class="tab-pane fade show active" id="desc" role="tabpanel">
+ <b>1. Giới thiệu Vợt Cầu Lông VNB Pro V88 Xanh</b><br>
+<p>
+    <b>VNB Pro V88 Xanh</b> là phiên bản mới ra mắt tháng 7 năm 2022, được thiết kế cho người chơi theo lối <b>đánh thiên công</b>, chuyên sử dụng các pha đập cầu mạnh để ghi điểm và áp đảo đối thủ.
+</p>
+<p>
+    Vợt có điểm cân bằng <b>nặng đầu</b>, thân vợt <b>cứng trung bình (8.5)</b> giúp tăng cường lực đập, đưa cầu đi cắm và nhanh hơn. Nhờ cấu trúc sợi <b>Carbon High Modulus Graphite</b>, vợt nhanh chóng quay lại trạng thái ổn định sau mỗi cú vung.
+</p>
+<p>
+   <iframe width="640" height="360" src="https://www.youtube.com/embed/q-8vXdK_GMk" title="Cũng Là VNB V88 Nhưng Mà Nó Lạ Lắm | Review Vợt VNB V88 Xanh Dương" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</p>
+<p>
+    Phiên bản <b>Xanh Dương</b> mang phong cách hiện đại, sang trọng, được phủ lớp <b>sơn nhám</b> bền bỉ – chống trầy xước nhẹ và đảm bảo tính thẩm mỹ lâu dài dù thường xuyên thi đấu.
+</p>
+<p>
+    Với 3 tiêu chí: <b>Chất lượng tốt – Ngoại hình đẹp – Giá hợp lý</b>, VNB V88 Xanh là lựa chọn lý tưởng cho người chơi yêu thích lối đánh tấn công hoặc muốn tập luyện tăng lực cổ tay.
+</p>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/lk39090ORrs" title="RA SÂN trải nghiệm Vợt cầu lông Chuyên Công - Giá Rẻ - Ngon Nhất 2022 | VNB V88 Xanh Dương" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</p>
+<b>2. Thông số kỹ thuật của Vợt cầu lông VNB V88 Xanh</b>
+<p>- Độ cứng: Cứng trung bình</p>
+<p>- Khung vợt: Carbon High Modulus Graphite</p>
+<p>- Thân vợt: Carbon High Modulus Graphite</p>
+<p>- Trọng lượng: 4U (82±2g)</p>
+<p>- Điểm cân bằng: 300±3mm</p>
+<p>- Chiều dài tổng thể: 675 mm</p>
+<p>- Swing weight: 84.4 kg/cm²</p>
+<p>- Chu vi cán: G5</p>
+<p>- Sức căng tối đa: 30 LBS (~13.6kg)</p>
+<p>- Màu sắc: Đen phối Xanh Dương</p>
+<p><img src="image_VNB/SPVNB.webp" width="60%"></p>
+
+<b>3. Công nghệ tích hợp trên Vợt cầu lông VNB Pro V88 Xanh</b>
+<p><b>- Carbon High Modulus Graphite:</b> Cả thân và khung vợt đều sử dụng sợi carbon mật độ cao, mang lại độ bền vượt trội, chịu lực căng lớn, hỗ trợ tối đa sức mạnh và độ ổn định trong từng pha đánh.</p>
+<p><b>- Công nghệ Isometric:</b> Thiết kế mặt vợt theo dạng vuông hiện đại giúp tăng diện tích điểm ngọt, hỗ trợ đánh trúng cầu dễ dàng hơn, tăng độ chính xác trong lối chơi tấn công.</p>
+
+<b>4. Đối tượng phù hợp với Vợt cầu lông VNB V88 Xanh</b>
+<p>- Dành cho người chơi theo <b>lối đánh thiên công</b>, yêu thích đập cầu mạnh.</p>
+<p>- Phù hợp với người chơi có <b>trình độ trung bình trở lên</b>, đặc biệt là những ai đã có kinh nghiệm thi đấu từ 2 năm trở lên.</p>
+<p>- Lý tưởng cho học sinh, sinh viên hoặc người chơi phổ thông đang tìm kiếm <b>một cây vợt tấn công giá rẻ, chính hãng và bền bỉ</b>.</p>
+
+   
+</div>
+  <div class="tab-pane fade" id="spec" role="tabpanel">
+   <table  class="table table-bordered">
+      <thead>
+        <tr>
+          <th  style="width:30%;">Trình Độ Chơi:</th>
+          <td style="width:70%;">Trung Bình</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td >Chiều dài  vợt:</td>
+          <td>	675 mm</td>
+        </tr>
+        <tr>
+          <td >Độ Cứng Đũa:</td>
+          <td>Trung Bình</td>
+        </tr>
+        <tr>
+          <td >Điểm Cân Bằng:</td>
+          <td>Nặng Đầu</td>
+        </tr>
+        <tr>
+          <td >Phong Cách Chơi:</td>
+          <td>Tấn Công</td>
+        </tr>
+        <tr>
+          <td >Nội Dung Chơi:</td>
+          <td>Đánh Đơn Và Đôi</td>
+        </tr>
+        <tr>
+          <th style=>Trọng Lượng:</td>
+          <td>	4U: 80 - 84g</td>
+        </tr>
+      </tbody>
+
+   </table>
+  </div>
+</div>
+</div>
+  </div>
+      <!------------------------------------------------------------------------------------------------->
+
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Tại sao chọn G9sport?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Sản phẩm chính hãng</h3>
+                    <p>100% sản phẩm nhập khẩu chính hãng từ các thương hiệu uy tín như Yonex, Victor, Li-Ning với đầy đủ tem bảo hành quốc tế.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Giao hàng nhanh chóng</h3>
+                    <p>Giao hàng miễn phí toàn quốc trong 1-2 ngày, đóng gói cẩn thận và bảo đảm sản phẩm nguyên vẹn khi đến tay khách hàng.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3>Dịch vụ căng cước</h3>
+                    <p>Dịch vụ căng cước chuyên nghiệp với máy móc hiện đại, đội ngũ kỹ thuật viên giàu kinh nghiệm đảm bảo độ căng chuẩn xác.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Về G9sport</h2>
+                    <p>
+                        Với hơn 10 năm kinh nghiệm trong ngành cầu lông, G9sport tự hào là địa chỉ tin cậy của các vận động viên chuyên nghiệp và người chơi nghiệp dư trên toàn quốc.
+                    </p>
+                    <p>
+                        Chúng tôi cam kết mang đến cho khách hàng những sản phẩm chất lượng cao nhất với giá cả hợp lý. Đội ngũ nhân viên am hiểu sâu về cầu lông sẽ tư vấn giúp bạn chọn được sản phẩm phù hợp nhất.
+                    </p>
+                    <p>
+                        Không chỉ bán hàng, chúng tôi còn cung cấp dịch vụ bảo hành, sửa chữa và căng cước chuyên nghiệp, đảm bảo vợt của bạn luôn trong tình trạng tốt nhất.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <div class="placeholder-image">
+                      <img src="https://cdn.shopvnb.com/uploads/images/tin_tuc/hinh-anh-vot-cau-long-3-1687828854.webp" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">    
+                    <h3>Liên hệ</h3>
+                    <p>📍 Địa chỉ: [Địa chỉ cửa hàng]</p>
+                    <p>📞 Hotline: [Số điện thoại]</p>
+                    <p>✉️ Email: [Email liên hệ]</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Chính sách</h3>
+                    <a href="#">Chính sách bảo hành</a>
+                    <a href="#">Chính sách đổi trả</a>
+                    <a href="#">Chính sách giao hàng</a>
+                    <a href="#">Chính sách bảo mật</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Hỗ trợ</h3>
+                    <a href="#">Hướng dẫn mua hàng</a>
+                    <a href="#">Hướng dẫn thanh toán</a>
+                    <a href="#">Câu hỏi thường gặp</a>
+                    <a href="#">Tư vấn chọn vợt</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Theo dõi chúng tôi</h3>
+                    <a href="#">📘 Facebook</a>
+                    <a href="#">📷 Instagram</a>
+                    <a href="#">📺 YouTube</a>
+                    <a href="#">📱 Zalo</a>
+                </div>
+            </div>
+           
+            <div class="footer-bottom">
+                <p>&copy; 2025 G9sports Store. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+  <script src="JS/AddToCart.js"></script>
+    <body>
+        </html>

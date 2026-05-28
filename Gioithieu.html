@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu</title>
+   
+    <style>
+        @font-face {font-family: "SFProDisplay";src: url("../font/SFPRODISPLAY/SFProDisplay-Regular.ttf") format("truetype");font-weight: 400;font-display: fallback;}
+@font-face {font-family: "SFProDisplay";src: url("../font/SFPRODISPLAY/SFProDisplay-Light.ttf") format("truetype");font-weight: 300;font-display: fallback;}
+@font-face {font-family: "SFProDisplay";src: url("../font/SFPRODISPLAY/SFProDisplay-Medium.ttf") format("truetype");font-weight: 500;font-display: fallback;}
+@font-face {font-family: "SFProDisplay";src: url("../font/SFPRODISPLAY/SFProDisplay-Bold.ttf") format("truetype");font-weight: bold;font-display: fallback;}
+@font-face {font-family: "SFProDisplay";src: url("../font/SFPRODISPLAY/SFProDisplay-Semibold.ttf") format("truetype");font-weight: 600;font-display: fallback;}
+@font-face {font-family: "SFProDisplay";src: url("../font/SFPRODISPLAY/SFProDisplay-Heavy.ttf") format("truetype");font-weight: 800;font-display: fallback;}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+:root {
+    --red: #b5292f;
+    --lightest-gray: rgb(249, 249, 249);
+    --lighter-gray: rgb(240, 240, 240);
+    --light-gray: rgb(144, 144, 144);
+    --medium-gray: rgb(96, 96, 96);
+    --dark-gray: rgb(13, 13, 13);
+    --header-height: 60px;
+    --animation-duration: 200ms;
+    --animation-timing-curve: ease-in-out;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 3px;
+    /* height:50px; */
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #fafafa;
+}
+
+body::-webkit-scrollbar-thumb {
+    /* background: rgba(0, 0, 0, 0); */
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.3) 0 0 0 1px;
+    box-shadow: rgba(255, 255, 255, 0.3) 0 0 0 1px;
+}
+
+body {
+    margin: 0;
+    font-family: "SF Pro Display", sans-serif;
+    overflow-x: hidden;
+}
+        .container {
+    display: flex;
+}
+
+.page-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.content {
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.section {
+    padding: 2rem 2rem 0 1.5rem;
+    display: none;
+    background-color: #fff;
+    position: relative;
+}
+
+.section.active {
+    display: block;
+}
+
+.cards {
+    display: flex;
+}
+
+.cards .card-single {
+    background: #fff;
+    height: 500px;
+    width: 31%;
+    /* max-width: 500px;*/
+    min-width: 290px;
+    position: relative;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+        inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+        5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    margin: 12px;
+}
+
+.cards .card-single .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    align-items: center;
+    transition: 0.5s;
+    padding: 20px;
+    text-align: center;
+}
+
+.cards .card-single:hover .box {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(45deg, var(--red), orange);
+}
+
+.cards .card-single .box .on-box {
+    margin-top: 2rem;
+}
+
+.cards .card-single .box h2 {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    font-size: 2rem;
+    color: var(--dark-gray);
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.cards .card-single .box h3 {
+    font-size: 1.5rem;
+    color: var(--dark-gray);
+    z-index: 1;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+.cards .card-single .box p {
+    font-size: 0.9em;
+    font-weight: 400;
+    color: var(--dark-gray);
+    z-index: 1;
+    transition: 0.3s;
+    text-align: left;
+}
+
+.cards .card-single .box:hover h2,
+.cards .card-single .box:hover h3,
+.cards .card-single .box:hover p {
+    color: #fff;
+}
+
+/*Team*/
+
+.team{
+    width: 100%;
+    height: 90vh;
+    background-image: url(image_GioiThieu/team.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.team h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+
+.team h1 span{
+    color: #fac031;
+    margin-left: 15px;
+    font-family: mv boli;
+}
+
+.team h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.team .team_box{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 13%;
+}
+
+.team .team_box .profile{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    transition: 0.4s;
+}
+
+.team .team_box .profile:hover{
+    border-radius: 20px;
+    height: 320px;
+}
+
+.team .team_box .profile img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    z-index: 2;
+    transition: 0.4s;
+}
+
+.team .team_box .profile:hover img{
+    border-radius: 20px;
+    margin-top: -230px;
+}
+
+.team .team_box .profile .info{
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    transition: 0.4s;
+}
+
+.team .team_box .profile:hover .info{
+    top: 60%;
+}
+
+.team .team_box .profile .info .name{
+    color: #fac031;
+    margin-bottom: 15px;
+}
+
+.team .team_box .profile .info .bio{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto 10px auto;
+}
+
+.team .team_box .profile .info .team_icon i{
+    margin: 10px 5px 5px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.team .team_box .profile .info .team_icon i:hover{
+    color: #fac031;
+}
+
+
+    </style>
+
+<link href="CSS/vot.css" rel="stylesheet" type="text/css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="CSS/all.min.css">
+<link href="font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+      <!---Header-->
+      <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="logo">
+
+                    G9sport
+                </div>
+                <div class="header-right">
+                    <div class="search-box">
+                        <form class="d-flex">
+                            <input class="form-control  me-2" id="searchInput" type="search" placeholder="Tìm kiếm...">
+                            <button class="btn btn-outline-light" type="submit">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="user-actions">
+                    <a href="GioHang.html" class="cart-icon">🛒</a>
+                    <a href="Admin.html">👤</a>
+                    <li class="has-submenu">
+                        <a href="#">💁‍♂️</a>
+                        <div class="submenu">
+                            <a href="DangNhap.html"> Đăng Xuất</a>
+
+                        </div>
+                    </li>
+
+
+                </div>
+            </div>
+        </div>
+        </div>
+        <nav class="main-nav">
+            <div class="nav-container">
+ <ul class="nav-menu">
+                    <li><a href="Home.html">Trang chủ</a></li>
+                    <li><a href="HotNew.html">NEW & HOT</a></li>
+                    <li><a href="TrangSanPham.html">Sản Phẩm</a></li>
+                    <li><a href="Gioithieu.html" class="active">Giới Thiệu</a></li>
+                    <li><a href="tintuc.html">Tin tức</a></li>
+                    <li><a href="Lienhe.html">Liên hệ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+   
+
+<br>
+<br><br>
+<br>
+
+    <main class="content">
+        <div class="section active">
+            <h1 class="page-title" style="background-color: #bb2d3b; color: white; padding: 10px 40px; text-align: center; border-radius: 30px; font-weight: bold;">Giới thiệu về web Bán vợt của chúng tôi</h1>
+            <div class="cards">
+                <div class="card-single">
+                    <div class="box">
+                        <h2 id="amount-user">1</h2>
+                        <div class="on-box">
+                            <img src="image_GioiThieu/g1.jpg" alt="" style=" width: 400px;">
+                            <h3>Khách hàng</h3>
+                            <p>Tại G9Sports, khách hàng là trung tâm trong mọi hoạt động của chúng tôi. Chúng tôi lắng nghe nhu cầu và sở thích của từng người chơi – từ người mới bắt đầu đến vận động viên chuyên nghiệp – để mang lại trải nghiệm mua sắm tối ưu và sản phẩm phù hợp nhất.</p>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div class="box">
+                        <div class="on-box">
+                            <img src="image_GioiThieu/g2.jpg" alt="" style=" width: 400px;">
+                            <h2 id="amount-product">100</h2>
+                            <h3>Sản phẩm</h3>
+                            <p>G9Sports chuyên cung cấp các loại vợt cầu lông, tennis và bóng bàn chất lượng cao đến từ những thương hiệu hàng đầu. Chúng tôi liên tục cập nhật các mẫu vợt mới với thiết kế hiện đại, độ bền cao và hiệu suất tối ưu, đáp ứng mọi phong cách thi đấu.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div class="box">
+                        <h2 id="doanh-thu">1.000.000.000 VNĐ</h2>
+                        <div class="on-box">
+                            <img src="image_GioiThieu/g3.jpg" alt="" style=" width: 400px;">
+                            <h3>Doanh thu</h3>
+                            <p>Doanh thu tại G9Sports phản ánh niềm tin của khách hàng và sự nỗ lực không ngừng trong việc cung cấp sản phẩm chất lượng, dịch vụ tận tâm và hậu mãi chuyên nghiệp. Mỗi đơn hàng là một bước tiến trong hành trình phát triển cùng cộng đồng yêu thể thao.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+    <!--Team-->
+
+    <div class="team">
+        <h1>Our<span>Team</span></h1>
+
+        <div class="team_box">
+            <div class="profile">
+                <img src="image_GioiThieu/business1.jpg">
+
+                <div class="info">
+                    <h2 class="name">Vũ Mạnh Hiệp</h2>
+                    <p class="bio"></p>
+
+                    <div class="team_icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="profile">
+                <img src="image_GioiThieu/bussines2.png">
+
+                <div class="info">
+                    <h2 class="name">Nguyễn Thị 
+                        <p>Minh Thư</p></h2>
+                    <p class="bio">.</p>
+
+                    <div class="team_icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="profile">
+                <img src="image_GioiThieu/bussiness3.png">
+
+                <div class="info">
+                    <h2 class="name">Nguyễn <br>Tiến Tài</h2>
+                    <p class="bio"></p>
+
+                    <div class="team_icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="profile">
+                <img src="image_GioiThieu/business4.png">
+
+                <div class="info">
+                    <h2 class="name">Hoàng Khôi <br>Nguyên</h2>
+                    <p class="bio"></p>
+
+                    <div class="team_icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+            <!--Footer-->
+            <footer class="bg-dark text-white pt-5 pb-4">
+                <div class="container text-center text-md-start">
+                  <div class="row">
+                    <div class="col-md-4 mb-4">
+                      <h5 class="text-uppercase fw-bold text-warning">
+                        WEB BÁN VỢT CẦU LÔNG UY TÍN
+                      </h5>
+                      <hr
+                        class="mb-3 mt-0 d-inline-block mx-auto"
+                        style="width: 80px; background-color: #ffc107; height: 2px"
+                      />
+                      <p>
+                        Cung cấp những cây vợt chính hãng, chất lượng cao
+                        <br>
+                        nhiều ưu đãi hấp dẫn
+                      </p>
+                    </div>
+          
+                    <div class="col-md-4 mb-4">
+                      <h5 class="text-uppercase fw-bold text-warning">Liên hệ</h5>
+                      <hr
+                        class="mb-3 mt-0 d-inline-block mx-auto"
+                        style="width: 80px; background-color: #ffc107; height: 2px"
+                      />
+                      <p>
+                        <i class="fas fa-map-marker-alt me-2"></i> 140 Tây Thạnh, Tân Phú,
+                        TP.HCM
+                      </p>
+                      <p><i class="fas fa-envelope me-2"></i> hotro@badmintonshop.vn</p>
+                      <p><i class="fas fa-phone me-2"></i> 1900999999</p>
+                    </div>
+          
+                    <div class="col-md-4 mb-4">
+                      <h5 class="text-uppercase fw-bold text-warning">Mạng xã hội</h5>
+                      <hr
+                        class="mb-3 mt-0 d-inline-block mx-auto"
+                        style="width: 80px; background-color: #ffc107; height: 2px"
+                      />
+                      <p>
+                        <a href="#" class="text-white text-decoration-none me-3"
+                          ><i class="fab fa-facebook-f"></i
+                        ></a>
+                        <a href="#" class="text-white text-decoration-none me-3"
+                          ><i class="fab fa-instagram"></i
+                        ></a>
+                        <a href="#" class="text-white text-decoration-none me-3"
+                          ><i class="fab fa-twitter"></i
+                        ></a>
+                        <a href="#" class="text-white text-decoration-none"
+                          ><i class="fab fa-youtube"></i
+                        ></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+          
+                <div
+                  class="text-center py-3"
+                  style="background-color: rgba(255, 255, 255, 0.05)"
+                >
+                  © 2025 Web bán vợt cầu lông. All rights reserved.
+                </div>
+              </footer>
+        <script>
+            const sidebars = document.querySelectorAll(".sidebar-list-item.tab-content");
+const sections = document.querySelectorAll(".section");
+
+for(let i = 0; i < sidebars.length; i++) {
+    sidebars[i].onclick = function () {
+        document.querySelector(".sidebar-list-item.active").classList.remove("active");
+        document.querySelector(".section.active").classList.remove("active");
+        sidebars[i].classList.add("active");
+        sections[i].classList.add("active");
+    };
+}
+
+const closeBtn = document.querySelectorAll('.section');
+console.log(closeBtn[0])
+for(let i=0;i<closeBtn.length;i++){
+    closeBtn[i].addEventListener('click',(e) => {
+        sidebar.classList.add("open");
+    })
+}
+
+// Get amount product
+//function getAmoumtProduct() {
+    let products = localStorage.getItem("products") ? JSON.parse(localStorage.getItem("products")) : [];
+    return products.length;
+//}
+
+// Get amount user
+//function getAmoumtUser() {
+    let accounts = localStorage.getItem("accounts") ? JSON.parse(localStorage.getItem("accounts")) : [];
+    return accounts.filter(item => item.userType == 0).length;
+//}
+
+// Get amount user
+//function getMoney() {
+    let tongtien = 0;
+    let orders = localStorage.getItem("order") ? JSON.parse(localStorage.getItem("order")) : [];
+    orders.forEach(item => {
+        tongtien += item.tongtien
+    });
+    return tongtien;
+//}
+
+document.getElementById("amount-user").innerHTML = getAmoumtUser();
+document.getElementById("amount-product").innerHTML = getAmoumtProduct();
+document.getElementById("doanh-thu").innerHTML = vnd(getMoney());
+
+// Doi sang dinh dang tien VND
+function vnd(price) {
+    return price.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+}
+// Phân trang 
+let perPage = 12;
+let currentPage = 1;
+let totalPage = 0;
+let perProducts = [];
+
+function displayList(productAll, perPage, currentPage) {
+    let start = (currentPage - 1) * perPage;
+    let end = (currentPage - 1) * perPage + perPage;
+    let productShow = productAll.slice(start, end);
+    showProductArr(productShow);
+}
+
+function setupPagination(productAll, perPage) {
+    document.querySelector('.page-nav-list').innerHTML = '';
+    let page_count = Math.ceil(productAll.length / perPage);
+    for (let i = 1; i <= page_count; i++) {
+        let li = paginationChange(i, productAll, currentPage);
+        document.querySelector('.page-nav-list').appendChild(li);
+    }
+}
+
+function paginationChange(page, productAll, currentPage) {
+    let node = document.createElement(`li`);
+    node.classList.add('page-nav-item');
+    node.innerHTML = `<a href="#">${page}</a>`;
+    if (currentPage == page) node.classList.add('active');
+    node.addEventListener('click', function () {
+        currentPage = page;
+        displayList(productAll, perPage, currentPage);
+        let t = document.querySelectorAll('.page-nav-item.active');
+        for (let i = 0; i < t.length; i++) {
+            t[i].classList.remove('active');
+        }
+        node.classList.add('active');
+    })
+    return node;
+}
+        </script>
+         <div class="contact-fixed">
+        <a href="tel:[Số điện thoại của bạn]" class="contact-icon phone-icon" aria-label="Gọi điện">
+            <img src="https://png.pngtree.com/png-vector/20191027/ourmid/pngtree-calling-telephone-line-icon-vector-png-image_1885981.jpg" alt="Điện thoại">
+        </a>
+        <a href="https://zalo.me/[Số Zalo của bạn]" target="_blank" class="contact-icon zalo-icon" aria-label="Chat Zalo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Icon_of_Zalo.svg/800px-Icon_of_Zalo.svg.png" alt="Zalo">
+        </a>
+        <a href="https://m.me/[ID Facebook Messenger của bạn]" target="_blank" class="contact-icon messenger-icon" aria-label="Chat Messenger">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/2048px-2023_Facebook_icon.svg.png" alt="Messenger">
+        </a>
+    </div>
+</body>
+</html>

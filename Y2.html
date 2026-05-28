@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G9sport - Cửa Hàng Vợt Cầu Lông Chuyên Nghiệp</title>
+    <link href="CSS/LINING.css" rel="stylesheet" type="text/css">
+    
+    <link href="CSS/all.min.css" rel="stylesheet">
+    <link href="CSS/fontawesome.min.css" rel="stylesheet">
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link href="font/bootstrap-icons.css" rel="stylesheet">
+    <link href="font/bootstrap-icons.json" rel="stylesheet">
+    <link href="font/bootstrap-icons.min.css"rel="stylesheet">
+    <link href="font/bootstrap-icons.scss" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="logo">
+                    G9sport
+                </div>
+                <div class="header-right">
+                    <div class="search-box">
+                        <input type="text" placeholder="Tìm kiếm...">
+                        <button type="submit">🔍</button>
+                    </div>
+                    <div class="user-actions">
+                        <a href="#" class="cart-icon">🛒</a>
+                        <a href="#">👤</a>
+                        <a href="#">❤️</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="nav-container">
+ <ul class="nav-menu">
+                    <li><a href="Home.html" >Trang chủ</a></li>
+                    <li><a href="HotNew.html">NEW & Nổi Bật</a></li>
+                    <li><a href="TrangSanPham.html"class="active">Sản Phẩm</a></li>
+                    <li><a href="Gioithieu.html">Giới Thiệu</a></li>
+                    <li><a href="tintuc.html">Tin tức</a></li>
+                    <li><a href="Lienhe.html">Liên hệ</a></li>
+                </ul>
+        </nav>
+    </header>
+
+   
+    <!--------------------------------------------------------------------->
+
+
+<div class="container ">
+  <div class="row w-100 mx-auto">
+   
+<div class="col-md-4 text-center">
+   
+    <img id="mainImage" src="image_Yonex/SPYonex2 (1).webp" class="img-fluid mb-3" alt="Vợt cầu lông">
+
+    <div class="d-flex justify-content-center gap-2">
+        <img src="image_Yonex/SPYonex2 (1).webp" class="img-thumbnail thumb" width="60">
+      <img src="image_Yonex/SPYonex2 (2).webp" class="img-thumbnail thumb" width="60">
+      <img src="image_Yonex/SPYonex2 (3).webp" class="img-thumbnail thumb" width="60">
+    </div>
+  </div>
+
+
+    <!-- Thông tin -->
+    <div class="col-md-8">
+      <h2>Vợt cầu lông Yonex Nanoflare Junior</h2>
+      <p>Mã: <span class="text-danger">VNB024012</span> | Tình trạng: <span class="text-success">Còn hàng</span></p>
+      <h5 class="text-danger fw-bold">1.639.000₫<del class="text-muted fs-6 ms-2">1.966.800 ₫</del></h5>
+
+
+      <!-- Ưu đãi -->
+      <div class="border p-3 rounded">
+        <h6 class="text-danger"><i class="bi bi-gift-fill"></i> ƯU ĐÃI</h6>
+        <ul class="list-unstyled">
+          <li>🎁 Tặng 2 quấn cán vợt :VNB 001, VS002 hoặc Joto 001</li>
+          <li>✅ Sản phẩm cam kết chính hãng</li>
+          <li>✅ Bảo hành chính hãng</li>
+         <li>✅ Thanh toán sau khi kiểm tra và nhận hàng</li>
+        </ul>
+        <hr>
+        <h6 class="text-black">Ưu đãi thêm khi mua sản phẩm tại <b>VNB Premium</b></h6>
+        <ul class="list-unstyled">
+          <li>✅ Sơn logo miễn phí</li>
+          <li>✅ Bảo hành lưới đan 72 giờ</li>
+          <li>✅ Thay gen miễn phí trọn đời</li>
+        </ul>
+      </div>
+
+      <!-- nút -->
+<div class="d-flex align-items-center mt-3 gap-3" >
+  <div class="input-group" style="width: 100px;">
+    <button class="btn btn-outline-secondary" type="button" id="decreaseBtn">-</button>
+    <input type="text" class="form-control text-center" value="1" id="quantityInput">
+    <button class="btn btn-outline-secondary" type="button" id="increaseBtn">+</button>
+  </div>
+  <button class="btn btn-danger text-white fw-bold"
+        id="addToCartDetailBtn"
+        data-product-id="Yonex Nanoflare Junior"
+        data-product-name="Vợt cầu lông Yonex Nanoflare Junior"
+        data-product-price="1639000"
+        data-product-image="image_Yonex/SPYonex2 (1).webp">
+    THÊM VÀO GIỎ HÀNG
+</button> 
+</div>
+    </div>
+</p>
+<!--------------------------------------------BỐ CỤC 2 PHẦN NAVS VÀ CONTAINER-------------------------------------------------->
+<ul class="nav nav-tabs mb-4" id="productTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active text-danger fw-bold" id="desc-tab" data-bs-toggle="tab" data-bs-target="#desc" type="button" role="tab">
+      MÔ TẢ SẢN PHẨM
+    </button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link text-dark fw-bold" id="spec-tab" data-bs-toggle="tab" data-bs-target="#spec" type="button" role="tab">
+      THÔNG SỐ KỸ THUẬT
+    </button>
+  </li>
+</ul>
+<div class="tab-content" id="productTabContent">
+  <div class="tab-pane fade show active" id="desc" role="tabpanel">
+ <b>1. Giới thiệu Vợt cầu lông Yonex Nanoflare Junior</b><br>
+<p>
+    Vợt cầu lông <b>Yonex Nanoflare Junior</b> được thiết kế cho lối chơi tốc độ, linh hoạt giữa công và thủ với điểm cân bằng ở mức trung tính. Đũa vợt siêu dẻo mang lại khả năng trợ lực tối ưu, trọng lượng 4U nhẹ nhàng, rất phù hợp cho người mới bắt đầu hoặc các lông thủ nhí.
+</p>
+<p><img src="image_Yonex/SPYonex2 (1).webp" width="60%"></p>
+<p>
+    Tổng thể vợt mang tông màu tươi sáng, họa tiết được làm tỉ mỉ, tạo nên sự bắt mắt và cá tính. Khung vợt mở rộng điểm ngọt giúp hạn chế cú đánh lệch tâm, từ đó tăng hiệu suất thi đấu. Cấu trúc khung giúp giảm lực cản không khí, nâng cao tốc độ vung vợt và độ linh hoạt.
+</p>
+<p>
+    Vật liệu cấu tạo đảm bảo độ bền bỉ, thân vợt siêu mỏng giảm tiếp xúc gió, tăng khả năng xử lý linh hoạt. Đây là lựa chọn lý tưởng cho người chơi mới hoặc trẻ em đang làm quen với cầu lông.
+</p>
+<p>
+    Ngoài ra, các bạn có thể tham khảo thêm những mẫu <b>vợt cầu lông Yonex</b> khác tại ShopVNB để có nhiều lựa chọn phù hợp.
+</p>
+
+<b>2. Thông số kỹ thuật của Vợt cầu lông Yonex Nanoflare Junior</b>
+<p>- Thương hiệu: Yonex</p>
+<p>- Độ cứng: Siêu dẻo</p>
+<p>- Khung vợt: Graphite, Nanocell NEO, HM Graphite</p>
+<p>- Thân vợt: Graphite</p>
+<p>- Trọng lượng: 4U</p>
+<p>- Chu vi cán vợt: G7</p>
+<p>- Sức căng khuyến nghị: 17 - 22 LBS</p>
+
+<b>3. Công nghệ tích hợp trên Vợt cầu lông Yonex Nanoflare Junior</b>
+<p><b>- ISOMETRIC:</b> Thiết kế đầu vợt vuông giúp mở rộng điểm ngọt, tăng khả năng đánh trúng cầu và giảm lỗi đánh lệch tâm, cải thiện hiệu suất thi đấu.</p>
+<p><img src="https://cdn.shopvnb.com/uploads/images/ISOMETRIC.png" width="50%"></p>
+<p><b>- SONIC FLARE SYSTEM:</b> Sử dụng graphite cao cấp ở phần dưới khung, giúp gia tăng sức mạnh và ổn định, mang lại tốc độ phản hồi nhanh chóng cho từng cú đánh.</p>
+<p><img src="https://cdn.shopvnb.com/uploads/images/SONIC-FLARE-SYSTEM.jpg" width="55%"></p>
+<p><b>- SUPER SLIM SHAFT:</b> Đũa vợt siêu mỏng giúp tối đa hóa khả năng cắt gió, hỗ trợ tốc độ vung nhanh, xử lý tình huống linh hoạt hơn.</p>
+<p><img src="https://cdn.shopvnb.com/uploads/images/CONG-NGHE-SUPER-SLIM-SHAFTS.png" width="20%"></p>
+<p><b>- CONTROL SUPPORT CAP:</b> Thiết kế nắp cán vợt phẳng và rộng giúp cải thiện độ bám, tăng khả năng kiểm soát và thao tác vợt dễ dàng hơn.</p>
+<p><img src="https://cdn.shopvnb.com/uploads/images/CONG-NGHE-CONTROL-SUPPORT-CAP.png" width="30%"></p>
+<p><b>- BUILT-IN T-JOINT:</b> Tăng cường liên kết giữa thân và khung vợt, cải thiện độ ổn định và giảm xoắn trong các pha cầu nhanh.</p>
+<p><img src="https://cdn.shopvnb.com/uploads/images/BUILT-IN-T-JOINT.jpg" width="60%"></p>
+<p><b>- NANOCELL NEO:</b> Chất liệu graphite đàn hồi cao, giúp tăng cường sức mạnh khi vung vợt và khả năng đẩy cầu đi xa hơn.</p>
+<p><img src="https://cdn.shopvnb.com/uploads/images/nanocell-neo.jpg" width="30%"></p>
+<p><b>- AERO FRAME:</b> Thiết kế bo tròn dạng hình oval giúp giảm lực cản không khí, tăng tốc độ vung và tính cơ động trong lối đánh phản tạt nhanh.</p>
+
+<b>4. Đối tượng phù hợp với Vợt cầu lông Yonex Nanoflare Junior</b>
+<p>
+    - Phù hợp cho <b>người mới bắt đầu</b> hoặc <b>trẻ em</b> đang học chơi cầu lông.
+</p>
+<p>
+    - Dành cho những người yêu thích lối đánh <b>phản tạt, linh hoạt, tốc độ cao</b>.
+</p>
+
+
+   
+</div>
+  <div class="tab-pane fade" id="spec" role="tabpanel">
+   <table  class="table table-bordered">
+      <thead>
+        <tr>
+          <th  style="width:30%;">Trình Độ Chơi:</th>
+          <td style="width:70%;">Mới Chơi</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td >Chiều dài  vợt:</td>
+          <td>	675 mm</td>
+        </tr>
+        <tr>
+          <td >Độ Cứng Đũa:</td>
+          <td>Dẽo</td>
+        </tr>
+        <tr>
+          <td >Điểm Cân Bằng:</td>
+          <td>Trung Bình</td>
+        </tr>
+        <tr>
+          <td >Phong Cách Chơi:</td>
+          <td>Công Thủ Toàn Diện</td>
+        </tr>
+        <tr>
+          <td >Nội Dung Chơi:</td>
+          <td>Đánh Đơn Và Đôi</td>
+        </tr>
+        <tr>
+          <th style=>Trọng Lượng:</td>
+          <td>	4U: 80 - 84g</td>
+        </tr>
+      </tbody>
+
+   </table>
+  </div>
+</div>
+</div>
+  </div>
+      <!------------------------------------------------------------------------------------------------->
+
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Tại sao chọn G9sport?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Sản phẩm chính hãng</h3>
+                    <p>100% sản phẩm nhập khẩu chính hãng từ các thương hiệu uy tín như Yonex, Victor, Li-Ning với đầy đủ tem bảo hành quốc tế.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Giao hàng nhanh chóng</h3>
+                    <p>Giao hàng miễn phí toàn quốc trong 1-2 ngày, đóng gói cẩn thận và bảo đảm sản phẩm nguyên vẹn khi đến tay khách hàng.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3>Dịch vụ căng cước</h3>
+                    <p>Dịch vụ căng cước chuyên nghiệp với máy móc hiện đại, đội ngũ kỹ thuật viên giàu kinh nghiệm đảm bảo độ căng chuẩn xác.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Về G9sport</h2>
+                    <p>
+                        Với hơn 10 năm kinh nghiệm trong ngành cầu lông, G9sport tự hào là địa chỉ tin cậy của các vận động viên chuyên nghiệp và người chơi nghiệp dư trên toàn quốc.
+                    </p>
+                    <p>
+                        Chúng tôi cam kết mang đến cho khách hàng những sản phẩm chất lượng cao nhất với giá cả hợp lý. Đội ngũ nhân viên am hiểu sâu về cầu lông sẽ tư vấn giúp bạn chọn được sản phẩm phù hợp nhất.
+                    </p>
+                    <p>
+                        Không chỉ bán hàng, chúng tôi còn cung cấp dịch vụ bảo hành, sửa chữa và căng cước chuyên nghiệp, đảm bảo vợt của bạn luôn trong tình trạng tốt nhất.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <div class="placeholder-image">
+                      <img src="https://cdn.shopvnb.com/uploads/images/tin_tuc/hinh-anh-vot-cau-long-3-1687828854.webp" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">    
+                    <h3>Liên hệ</h3>
+                    <p>📍 Địa chỉ: [Địa chỉ cửa hàng]</p>
+                    <p>📞 Hotline: [Số điện thoại]</p>
+                    <p>✉️ Email: [Email liên hệ]</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Chính sách</h3>
+                    <a href="#">Chính sách bảo hành</a>
+                    <a href="#">Chính sách đổi trả</a>
+                    <a href="#">Chính sách giao hàng</a>
+                    <a href="#">Chính sách bảo mật</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Hỗ trợ</h3>
+                    <a href="#">Hướng dẫn mua hàng</a>
+                    <a href="#">Hướng dẫn thanh toán</a>
+                    <a href="#">Câu hỏi thường gặp</a>
+                    <a href="#">Tư vấn chọn vợt</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Theo dõi chúng tôi</h3>
+                    <a href="#">📘 Facebook</a>
+                    <a href="#">📷 Instagram</a>
+                    <a href="#">📺 YouTube</a>
+                    <a href="#">📱 Zalo</a>
+                </div>
+            </div>
+           
+            <div class="footer-bottom">
+                <p>&copy; 2025 G9sports Store. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+  <script src="JS/AddToCart.js"></script>
+    <body>
+        </html>

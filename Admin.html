@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Đơn Hàng & Sản Phẩm</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/Admin.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="webfonts/fa-solid-900.ttf">
+</head>
+<body>
+    <header class="admin-header">
+        <div class="container">
+            <h1><i class="fas fa-tools"></i> Trang Quản Lý</h1>
+            <nav>
+                <ul>
+                    <li><a href="SanPham.html"><i class="fas fa-home"></i> Trang khách hàng</a></li>
+                    <li><a href="#" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="admin-main">
+        <div class="container">
+            <section id="order-management" class="admin-section">
+                <h2><i class="fas fa-clipboard-list"></i> Quản Lý Đơn Hàng</h2>
+                <div class="controls">
+                    <input type="text" id="orderSearchInput" placeholder="Tìm kiếm đơn hàng...">
+                    <select id="orderFilterStatus">
+                        <option value="all">Tất cả trạng thái</option>
+                        <option value="Đang chờ xử lý">Đang chờ xử lý</option>
+                        <option value="Đã xác nhận">Đã xác nhận</option>
+                        <option value="Đang giao hàng">Đang giao hàng</option>
+                        <option value="Đã giao hàng">Đã giao hàng</option>
+                        <option value="Đã hủy">Đã hủy</option>
+                    </select>
+                    <button id="clearAllOrdersBtn" class="btn btn-danger"><i class="fas fa-trash"></i> Xóa tất cả đơn</button>
+                </div>
+
+                <div class="table-responsive">
+                    <table id="orderTable">
+                        <thead>
+                            <tr>
+                                <th>ID Đơn hàng</th>
+                                <th>Khách hàng</th>
+                                <th>Số điện thoại</th>
+                                <th>Tổng tiền</th>
+                                <th>Ngày đặt</th>
+                                <th>Trạng thái</th>
+                                <th>Hành động</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            </tbody>
+                    </table>
+                </div>
+                <p id="noOrdersMessage" class="empty-message hidden">Chưa có đơn hàng nào.</p>
+            </section>
+
+            <div id="orderDetailModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <h3><i class="fas fa-info-circle"></i> Chi Tiết Đơn Hàng</h3>
+                    <div id="modalOrderDetails">
+                        <p><strong>ID Đơn hàng:</strong> <span id="modalOrderId"></span></p>
+                        <p><strong>Khách hàng:</strong> <span id="modalCustomerName"></span></p>
+                        <p><strong>Số điện thoại:</strong> <span id="modalCustomerPhone"></span></p>
+                        <p><strong>Địa chỉ:</strong> <span id="modalCustomerAddress"></span></p>
+                        <p><strong>Phương thức TT:</strong> <span id="modalPaymentMethod"></span></p>
+                        <p><strong>Ngày đặt:</strong> <span id="modalOrderDate"></span></p>
+                        <p><strong>Tổng tiền:</strong> <span id="modalTotalAmount"></span></p>
+
+                        <h4>Các sản phẩm:</h4>
+                        <ul id="modalOrderItems"></ul>
+
+                        <div class="form-group">
+                            <label for="modalOrderStatus">Cập nhật Trạng thái:</label>
+                            <select id="modalOrderStatus">
+                                <option value="Đang chờ xử lý">Đang chờ xử lý</option>
+                                <option value="Đã xác nhận">Đã xác nhận</option>
+                                <option value="Đang giao hàng">Đang giao hàng</option>
+                                <option value="Đã giao hàng">Đã giao hàng</option>
+                                <option value="Đã hủy">Đã hủy</option>
+                            </select>
+                        </div>
+                        <button id="saveOrderStatusBtn" class="btn btn-success">Lưu Trạng Thái</button>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+    </main>
+
+    <footer>
+     
+    </footer>
+    <script src="JS/Admin.js"></script>
+    <script src="JS/fontawesome.min.js"></script>
+</body>
+</html>

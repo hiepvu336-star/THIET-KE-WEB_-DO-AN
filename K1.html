@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G9sport - Cửa Hàng Vợt Cầu Lông Chuyên Nghiệp</title>
+    <link href="CSS/LINING.css" rel="stylesheet" type="text/css">
+    
+    <link href="CSS/all.min.css" rel="stylesheet">
+    <link href="CSS/fontawesome.min.css" rel="stylesheet">
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link href="font/bootstrap-icons.css" rel="stylesheet">
+    <link href="font/bootstrap-icons.json" rel="stylesheet">
+    <link href="font/bootstrap-icons.min.css"rel="stylesheet">
+    <link href="font/bootstrap-icons.scss" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="logo">
+                    G9sport
+                </div>
+                <div class="header-right">
+                    <div class="search-box">
+                        <input type="text" placeholder="Tìm kiếm...">
+                        <button type="submit">🔍</button>
+                    </div>
+                    <div class="user-actions">
+                        <a href="#" class="cart-icon">🛒</a>
+                        <a href="#">👤</a>
+                        <a href="#">❤️</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="nav-container">
+ <ul class="nav-menu">
+                    <li><a href="Home.html" >Trang chủ</a></li>
+                    <li><a href="HotNew.html">NEW & Nổi Bật</a></li>
+                    <li><a href="TrangSanPham.html"class="active">Sản Phẩm</a></li>
+                    <li><a href="Gioithieu.html">Giới Thiệu</a></li>
+                    <li><a href="tintuc.html">Tin tức</a></li>
+                    <li><a href="Lienhe.html">Liên hệ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+   
+    <!--------------------------------------------------------------------->
+
+
+<div class="container ">
+  <div class="row w-100 mx-auto">
+   
+<div class="col-md-4 text-center">
+   
+    <img id="mainImage" src="image_Kumpoo/SPKumpoo (1).webp" class="img-fluid mb-3" alt="Vợt cầu lông">
+
+    <div class="d-flex justify-content-center gap-2">
+        <img src="image_Kumpoo/SPKumpoo (1).webp" class="img-thumbnail thumb" width="60">
+      <img src="image_Kumpoo/SPKumpoo (2).webp" class="img-thumbnail thumb" width="60">
+      <img src="image_Kumpoo/SPKumpoo (3).webp" class="img-thumbnail thumb" width="60">
+      <img src="image_Kumpoo/SPKumpoo (4).webp" class="img-thumbnail thumb" width="60">
+    </div>
+  </div>
+
+
+    <!-- Thông tin -->
+    <div class="col-md-8">
+      <h2>Vợt Cầu Lông Kumpoo JingZhou Chính Hãng</h2>
+      <p>Mã: <span class="text-danger">VNB024794</span> | Tình trạng: <span class="text-success">Còn hàng</span></p>
+      <h5 class="text-danger fw-bold">930.000 ₫<del class="text-muted fs-6 ms-2">1.116.000 ₫</del></h5>
+
+
+      <!-- Ưu đãi -->
+      <div class="border p-3 rounded">
+        <h6 class="text-danger"><i class="bi bi-gift-fill"></i> ƯU ĐÃI</h6>
+        <ul class="list-unstyled">
+          <li>🎁 Tặng 2 quấn cán vợt :VNB 001, VS002 hoặc Joto 001</li>
+          <li>✅ Sản phẩm cam kết chính hãng</li>
+          <li>✅ Bảo hành chính hãng</li>
+         <li>✅ Thanh toán sau khi kiểm tra và nhận hàng</li>
+        </ul>
+        <hr>
+        <h6 class="text-black">Ưu đãi thêm khi mua sản phẩm tại <b>VNB Premium</b></h6>
+        <ul class="list-unstyled">
+          <li>✅ Sơn logo miễn phí</li>
+          <li>✅ Bảo hành lưới đan 72 giờ</li>
+          <li>✅ Thay gen miễn phí trọn đời</li>
+        </ul>
+      </div>
+
+      <!-- nút -->
+<div class="d-flex align-items-center mt-3 gap-3" >
+  <div class="input-group" style="width: 100px;">
+    <button class="btn btn-outline-secondary" type="button" id="decreaseBtn">-</button>
+    <input type="text" class="form-control text-center" value="1" id="quantityInput">
+    <button class="btn btn-outline-secondary" type="button" id="increaseBtn">+</button>
+  </div>
+  <button class="btn btn-danger text-white fw-bold"
+        id="addToCartDetailBtn"
+        data-product-id="Kumpoo JingZhou"
+        data-product-name="Vợt Cầu Lông Kumpoo JingZhou Chính Hãng"
+        data-product-price="930000"
+        data-product-image="image_Kumpoo/SPKumpoo (1).webp">
+    THÊM VÀO GIỎ HÀNG
+</button> 
+</div>
+    </div>
+<!--------------------------------------------BỐ CỤC 2 PHẦN NAVS VÀ CONTAINER-------------------------------------------------->
+<ul class="nav nav-tabs mb-4" id="productTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active text-danger fw-bold" id="desc-tab" data-bs-toggle="tab" data-bs-target="#desc" type="button" role="tab">
+      MÔ TẢ SẢN PHẨM
+    </button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link text-dark fw-bold" id="spec-tab" data-bs-toggle="tab" data-bs-target="#spec" type="button" role="tab">
+      THÔNG SỐ KỸ THUẬT
+    </button>
+  </li>
+</ul>
+<div class="tab-content" id="productTabContent">
+  <div class="tab-pane fade show active" id="desc" role="tabpanel">
+    <b>1. Giới thiệu Vợt Cầu Lông Kumpoo JingZhou Chính Hãng</b><br>
+<p>
+    - Vợt Cầu Lông Kumpoo JingZhou Chính Hãng là mẫu vợt tầm trung vừa được cho ra mắt trong năm 2025 của thương hiệu Kumpoo, với ý tưởng lấy từ tỉnh thành JingZhou (Kinh Châu - Trung Quốc). Thiết kế của Kumpoo JingZhou có màu sắc trắng kết hợp với các họa tiết màu xanh lá làm cho cây vợt trở nên nổi bật hơn.
+</p>
+<p>
+    - Với điểm cân bằng 295mm, đũa vợt cứng trung bình trợ lực, vợt mang phong cách chơi công thủ toàn diện. Bên cạnh đó thì trọng lượng 4U cùng đũa vợt mỏng 6.8mm cho khả năng vung vợt linh hoạt, hỗ trợ các pha phản tạt và phòng thủ nhanh và hiệu quả hơn. Vợt tích hợp công nghệ NFC chống hàng giả trên cán, giúp bạn tránh mua hàng giả hàng nhái.
+</p>
+<p><b>Vợt Cầu Lông Kumpoo JingZhou Chính Hãng</b></p>
+<p>
+    - Mặt vợt rộng cùng thiết kế hệ thống 76 lỗ gen giúp bảo vệ độ bền của lưới, hình dạng isometric mở rộng vùng điểm ngọt để tăng tỉ lệ đánh cầu chuẩn xác hơn cho người chơi, đặc biệt là những người mới tham gia vào bộ môn này. Chất liệu khung sợi Carbon cao cấp mang đến khả năng chịu lực cao lên đến 30Lbs.
+</p>
+<img src="image_Kumpoo/SPKumpoo (1).webp" width="60%">
+<p>
+    - Ngoài ra các bạn cũng đừng quên dành chút thời gian để tham khảo thêm nhiều mẫu mã vợt cầu lông Kumpoo đa dạng khác đang được bán tại ShopVNB để có cho mình một sự lựa chọn ưng ý theo sở thích và phong cách chơi của mình.
+</p>
+
+<b>2. Thông số Vợt Cầu Lông Kumpoo JingZhou Chính Hãng</b>
+<p>- Thương hiệu: Kumpoo</p>
+<p>- Màu sắc: Trắng phối xanh lá</p>
+<p>- Chất liệu: High strength carbon fiber</p>
+<p>- Độ cân bằng: 295 ± 5mm</p>
+<p>- Độ cứng: Trung bình (8.5)</p>
+<p>- Chiều dài vợt: 675 mm</p>
+<p>- Hệ thống 76 lỗ trên mặt vợt</p>
+<p>- Đường kính đũa vợt: 6,8mm</p>
+<p>- Trọng lượng: 4U</p>
+<p>- Chu vi cán vợt: G5</p>
+<p>- Mức căng lưới: 22 - 30LBS ~ 13.7kg</p>
+
+<p><img src="image_Kumpoo/SPKumpoo (3).webp" width="60%"></p>
+
+<b>3. Đối tượng phù hợp với Vợt Cầu Lông Kumpoo JingZhou Chính Hãng</b>
+<p>
+    - Vợt Cầu Lông Kumpoo JingZhou Chính Hãng dành cho lối chơi công thủ toàn diện.
+</p>
+<p>
+    - Thích hợp cho người mới bắt đầu, có lực cổ tay chưa được tốt.
+</p>
+<p>
+    - Giá thành phải chăng phù hợp với các đối tượng người chơi học sinh, sinh viên, trẻ em, người chơi giải trí...
+</p>
+   
+</div>
+  <div class="tab-pane fade" id="spec" role="tabpanel">
+   <table  class="table table-bordered">
+      <thead>
+        <tr>
+          <th  style="width:30%;">Trình Độ Chơi:</th>
+          <td style="width:70%;">Trung Bình</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td >Chiều dài  vợt:</td>
+          <td>	675 mm</td>
+        </tr>
+        <tr>
+          <td >Độ Cứng Đũa:</td>
+          <td>Cứng</td>
+        </tr>
+        <tr>
+          <td >Điểm Cân Bằng:</td>
+          <td>Nặng Đầu</td>
+        </tr>
+        <tr>
+          <td >Phong Cách Chơi:</td>
+          <td>Tấn Công</td>
+        </tr>
+        <tr>
+          <td >Nội Dung Chơi:</td>
+          <td>Đánh Đơn Và Đôi</td>
+        </tr>
+        <tr>
+          <th style=>Trọng Lượng:</td>
+          <td>	4U: 80 - 84g</td>
+        </tr>
+      </tbody>
+
+   </table>
+  </div>
+</div>
+</div>
+  </div>
+      <!------------------------------------------------------------------------------------------------->
+
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Tại sao chọn G9sport?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Sản phẩm chính hãng</h3>
+                    <p>100% sản phẩm nhập khẩu chính hãng từ các thương hiệu uy tín như Yonex, Victor, Li-Ning với đầy đủ tem bảo hành quốc tế.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Giao hàng nhanh chóng</h3>
+                    <p>Giao hàng miễn phí toàn quốc trong 1-2 ngày, đóng gói cẩn thận và bảo đảm sản phẩm nguyên vẹn khi đến tay khách hàng.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3>Dịch vụ căng cước</h3>
+                    <p>Dịch vụ căng cước chuyên nghiệp với máy móc hiện đại, đội ngũ kỹ thuật viên giàu kinh nghiệm đảm bảo độ căng chuẩn xác.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Về G9sport</h2>
+                    <p>
+                        Với hơn 10 năm kinh nghiệm trong ngành cầu lông, G9sport tự hào là địa chỉ tin cậy của các vận động viên chuyên nghiệp và người chơi nghiệp dư trên toàn quốc.
+                    </p>
+                    <p>
+                        Chúng tôi cam kết mang đến cho khách hàng những sản phẩm chất lượng cao nhất với giá cả hợp lý. Đội ngũ nhân viên am hiểu sâu về cầu lông sẽ tư vấn giúp bạn chọn được sản phẩm phù hợp nhất.
+                    </p>
+                    <p>
+                        Không chỉ bán hàng, chúng tôi còn cung cấp dịch vụ bảo hành, sửa chữa và căng cước chuyên nghiệp, đảm bảo vợt của bạn luôn trong tình trạng tốt nhất.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <div class="placeholder-image">
+                      <img src="https://cdn.shopvnb.com/uploads/images/tin_tuc/hinh-anh-vot-cau-long-3-1687828854.webp" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">    
+                    <h3>Liên hệ</h3>
+                    <p>📍 Địa chỉ: [Địa chỉ cửa hàng]</p>
+                    <p>📞 Hotline: [Số điện thoại]</p>
+                    <p>✉️ Email: [Email liên hệ]</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Chính sách</h3>
+                    <a href="#">Chính sách bảo hành</a>
+                    <a href="#">Chính sách đổi trả</a>
+                    <a href="#">Chính sách giao hàng</a>
+                    <a href="#">Chính sách bảo mật</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Hỗ trợ</h3>
+                    <a href="#">Hướng dẫn mua hàng</a>
+                    <a href="#">Hướng dẫn thanh toán</a>
+                    <a href="#">Câu hỏi thường gặp</a>
+                    <a href="#">Tư vấn chọn vợt</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Theo dõi chúng tôi</h3>
+                    <a href="#">📘 Facebook</a>
+                    <a href="#">📷 Instagram</a>
+                    <a href="#">📺 YouTube</a>
+                    <a href="#">📱 Zalo</a>
+                </div>
+            </div>
+       
+            <div class="footer-bottom">
+                <p>&copy; 2025 G9sports Store. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+  <script src="JS/AddToCart.js"></script>
+    <body>
+        </html>

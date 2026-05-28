@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G9sport - Cửa Hàng Vợt Cầu Lông Chuyên Nghiệp</title>
+    <link href="CSS/LINING.css" rel="stylesheet" type="text/css">
+    
+    <link href="CSS/all.min.css" rel="stylesheet">
+    <link href="CSS/fontawesome.min.css" rel="stylesheet">
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link href="font/bootstrap-icons.css" rel="stylesheet">
+    <link href="font/bootstrap-icons.json" rel="stylesheet">
+    <link href="font/bootstrap-icons.min.css"rel="stylesheet">
+    <link href="font/bootstrap-icons.scss" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="logo">
+                    G9sport
+                </div>
+                <div class="header-right">
+                    <div class="search-box">
+                        <input type="text" placeholder="Tìm kiếm...">
+                        <button type="submit">🔍</button>
+                    </div>
+                    <div class="user-actions">
+                        <a href="#" class="cart-icon">🛒</a>
+                        <a href="#">👤</a>
+                        <a href="#">❤️</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+        <nav class="main-nav">
+            <div class="nav-container">
+ <ul class="nav-menu">
+                    <li><a href="Home.html">Trang chủ</a></li>
+                    <li><a href="HotNew.html">NEW & Nổi Bật</a></li>
+                    <li><a href="TrangSanPham.html" class="active">Sản Phẩm</a></li>
+                    <li><a href="Gioithieu.html">Giới Thiệu</a></li>
+                    <li><a href="tintuc.html">Tin tức</a></li>
+                    <li><a href="Lienhe.html">Liên hệ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+   
+    <!--------------------------------------------------------------------->
+
+
+<div class="container ">
+  <div class="row w-100 mx-auto">
+   
+<div class="col-md-4 text-center">
+   
+    <img id="mainImage" src="image_Victor/SPVictor2 (1).webp" class="img-fluid mb-3" alt="Vợt cầu lông">
+
+    <div class="d-flex justify-content-center gap-2">
+        <img src="image_Victor/SPVictor2 (1).webp" class="img-thumbnail thumb" width="60">
+      <img src="image_Victor/SPVictor2 (2).webp" class="img-thumbnail thumb" width="60">
+      <img src="image_Victor/SPVictor2 (3).webp" class="img-thumbnail thumb" width="60">
+      <img src="image_Victor/SPVictor2 (4).webp" class="img-thumbnail thumb" width="60">
+    </div>
+  </div>
+
+
+    <!-- Thông tin -->
+    <div class="col-md-8">
+      <h2>Vợt cầu lông Victor Thruster Shenron G - DragonBall Z 2025 chính hãng</h2>
+      <p>Mã: <span class="text-danger">VNB025320</span> | Tình trạng: <span class="text-success">Còn hàng</span></p>
+      <h5 class="text-danger fw-bold">3.240.000 ₫<del class="text-muted fs-6 ms-2">3.888.000 ₫</del></h5>
+
+      <!-- -->
+      <div class="my-3">
+        <label class="form-label fw-bold">Chọn [Phiên bản]:</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" checked >
+          <label class="form-check-label">Có bảo hành (CH) 3.240.000 ₫</label>
+          
+        </div> 
+      </div>
+
+      <!-- Ưu đãi -->
+      <div class="border p-3 rounded">
+        <h6 class="text-danger"><i class="bi bi-gift-fill"></i> ƯU ĐÃI</h6>
+        <ul class="list-unstyled">
+          <li>🎁 Tặng 2 quấn cán vợt :VNB 001, VS002 hoặc Joto 001</li>
+          <li>✅ Sản phẩm cam kết chính hãng</li>
+          <li>✅ Bảo hành chính hãng</li>
+         <li>✅ Thanh toán sau khi kiểm tra và nhận hàng</li>
+        </ul>
+        <hr>
+        <h6 class="text-black">Ưu đãi thêm khi mua sản phẩm tại <b>VNB Premium</b></h6>
+        <ul class="list-unstyled">
+          <li>✅ Sơn logo miễn phí</li>
+          <li>✅ Bảo hành lưới đan 72 giờ</li>
+          <li>✅ Thay gen miễn phí trọn đời</li>
+        </ul>
+      </div>
+
+      <!-- nút -->
+<div class="d-flex align-items-center mt-3 gap-3" >
+  <div class="input-group" style="width: 100px;">
+    <button class="btn btn-outline-secondary" type="button" id="decreaseBtn">-</button>
+    <input type="text" class="form-control text-center" value="1" id="quantityInput">
+    <button class="btn btn-outline-secondary" type="button" id="increaseBtn">+</button>
+  </div>
+  <button class="btn btn-danger text-white fw-bold"
+        id="addToCartDetailBtn"
+        data-product-id="Victor-Thruster-Shenron-G-DragonBall-Z-2025"
+        data-product-name="Vợt cầu lông Victor Thruster Shenron G - DragonBall Z 2025"
+        data-product-price="3240000"
+        data-product-image="image_Victor/SPVictor2 (1).jpg">
+    THÊM VÀO GIỎ HÀNG
+</button> 
+</div>
+    </div>
+<!--------------------------------------------BỐ CỤC 2 PHẦN NAVS VÀ CONTAINER-------------------------------------------------->
+<ul class="nav nav-tabs mb-4" id="productTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active text-danger fw-bold" id="desc-tab" data-bs-toggle="tab" data-bs-target="#desc" type="button" role="tab">
+      MÔ TẢ SẢN PHẨM
+    </button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link text-dark fw-bold" id="spec-tab" data-bs-toggle="tab" data-bs-target="#spec" type="button" role="tab">
+      THÔNG SỐ KỸ THUẬT
+    </button>
+  </li>
+</ul>
+<div class="tab-content" id="productTabContent">
+  <div class="tab-pane fade show active" id="desc" role="tabpanel">
+    <b>
+1. 1. Giới thiệu Vợt cầu lông Victor Thruster Shenron G – DragonBall Z 2025 chính hãng</b><br>
+<p>
+    - Vợt cầu lông Victor Thruster Shenron G – DragonBall Z 2025 chính hãng đánh dấu sự hợp tác giữa thương hiệu Victor và bộ truyện tranh huyền thoại Dragon Ball Z nhằm tạo nên một sản phẩm mang tiếng vang lớn trong cộng đồng cầu lông. Lấy cảm hứng trực tiếp từ hình tượng Rồng Thần Shenron, Victor Thruster Shenron G – DragonBall Z 2025 khoác lên mình màu xanh lá cây đặc trưng kết hợp với các chi tiết đồ họa tinh xảo, tái hiện hình ảnh Rồng Thần một cách sống động và đầy uy lực. Các chi tiết viên ngọc rồng được làm nổi bật trên khung vợt càng làm gia tăng tính thẩm mỹ của siêu phẩm này.
+</p>
+<img src="image_Victor/SPVictor2 (1).webp" width="60%">
+</p><p>
+- Vợt Victor Thruster Shenron G – DragonBall Z 2025 được trang bị công nghệ sợi carbon PYROFIL cao cấp từ, giúp tăng khả năng hấp thụ sốc và kiểm soát cầu tốt hơn, đồng thời kết hợp công nghệ HARD CORED TECHNOLOGY giúp tăng độ cứng và độ bền của khung vợt. Vợt có điểm cân bằng nặng đầu, thân cứng tạo nên sức mạnh tấn công mạnh mẽ. Trọng lượng 4U (khoảng 80-84 gram) giúp tăng độ linh hoạt và giảm bớt áp lực lên cánh tay, đặc biệt trong các trận đấu kéo dài hoặc những tình huống yêu cầu tốc độ.
+</p><p>
+- Trục vợt của Shenron G mỏng chỉ 6.5mm, một thiết kế mỏng hơn so với trục vợt thông thường giúp giảm sức cản không khí, từ đó tăng tốc độ vung vợt, mang đến khả năng bung lực mạnh hơn, nhanh hơn, tạo thêm nhiều sức mạnh hơn cho pha cầu.
+</p>
+<img src="image_Victor/SPVictor2 (2).webp" width="60%">
+</p>
+<p><b>
+2. Thông số Vợt Cầu Lông Victor Thruster Ryuga Metallic CPS</b>
+</p><p>
+- Thương hiệu: Victor
+</p><p>
+- Độ cứng: Cứng
+</p><p>
+- Vật liệu khung: High ResilienceModulus Graphite+PYROFIL+HARD CORED TECHNOLOGY
+</p><p>
+- Vật liệu trục: High ResilienceModulusGraphite + PYROFIL + 6.5 SHAFT
+</p><p>
+- Điểm cân bằng: 305 mm ( Nặng đầu)
+</p><p>
+- Chiều dài vợt: 675mm
+  </p> 
+<p>
+- Sức căng tối đa: 32lbs ( 14,5 kg)
+</p><p>
+- Trọng lượng: 4U
+</p><p>
+- Đường kính đũa: 6,5mm
+</p><p>
+- Chu vi cán vợt: G5
+</p><b>
+3. Công nghệ áp dụng trên Vợt cầu lông Victor Thruster Shenron G – DragonBall Z 2025 chính hãng
+ </b></p><p>
+    - PYROFIL: Sợi carbon PYROFIL và vật liệu tổng hợp của nó là những vật liệu hiệu suất cao tiên tiến từ Nhật Bản. Đặc tính của các liên kết cường độ cao siêu nhẹ mang đến cho vợt khả năng hấp thụ sốc tuyệt vời và tăng cường khả năng kiểm soát.
+ </p>
+ <img src="https://cdn.shopvnb.com/uploads/gallery/vot-cau-long-victor-thruster-shenron-g-ndash-dragonball-z-2025-chinh-hang-3_1748468099.webp" width="60%">
+</p><p>
+    - HARD CORE TECHNOLOGY: Công nghệ này giúp tăng sự liên kết giữa các sợi Carbon trong khung vợt, giúp hiệu suất sử dụng được tăng lên đáng kể, bên cạnh đó nó cũng tăng độ cứng của khung vợt giúp vợt chịu được mức căng cao.
+</p><p>
+- NANO TEC: Công nghệ NANO TEC của hãng VICTOR hoạt động bằng cách phân bố đều các hạt có kích thước nano vào khoảng trống giữa các bó sợi carbon, các phân tử này sẽ lấp đầy các khoảng trống để gắn kết các phân tử vật liệu hơn để làm tăng đáng kể độ cứng tổng thể của sợi carbon tổng hợp và giảm độ biến dạng của khung.
+</p>
+<img src="https://cdn.shopvnb.com/uploads/images/cong-nghe-vot-cau-long-Victor-NANO-TEC.jpg" width="60%"></p>
+<p>
+- TRI-FORMATION: là công nghệ khung của Victor được tạo ra từ nhiều hình dạng khung độc đáo. Công nghệ tạo ra bộ khung tích hợp bao gồm POWER-BOX, DIAMOND AERO và AERDYNAMIC để tối ưu hóa cú đánh, đặc điểm khung và hiệu suất tổng thể.
+</p>
+<img src="https://cdn.shopvnb.com/uploads/images/cong-nghe-vot-cau-long-TRI_FORMATION.jpg" width="60%">
+</p><p>
+- FREE CORE: Công nghệ cán cầm FREECORE được hãng Victor thiết kế bằng mô phỏng máy tính và tạo ra bằng việc áp dụng kỹ thuật ép phun. Kiểu tay cầm mới này cho phép trục di chuyển tự do hơn, điều này giúp các cú xoay mượt mà hơn. Theo kết quả thử nghiệm thì cán cầm FREECORE cho khả năng uốn cong tốt hơn so với cán cầm bằng gỗ, từ đó giúp phản lực trên trái cầu tốt hơn và nhanh chóng đưa cây vợt trở về trạng thái ban đầu trong thời gian ngắn.
+</p><b>
+4. Đối tượng phù hợp với Vợt cầu lông Victor Thruster Shenron G – DragonBall Z 2025 chính hãng
+</b></p><p>
+- Vợt cầu lông Victor Thruster Shenron G – DragonBall Z 2025 chính hãng dành cho người chơi có lối đánh tấn công, sức mạnh, tìm kiếm độ chính xác và khả năng kiểm soát vượt trội trên sân. Vợt hướng đến những người chơi có lực cổ tay ở mức khỏe, trình đồ từ trung bình trở lên sẽ dễ dàng làm quen và phát huy tốt đa công năng sản phẩm.
+</p>    
+</div>
+  <div class="tab-pane fade" id="spec" role="tabpanel">
+   <table  class="table table-bordered">
+      <thead>
+        <tr>
+          <th  style="width:30%;">Trình Độ Chơi:</th>
+          <td style="width:70%;">Trung Bình</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td >Chiều dài  vợt:</td>
+          <td>	675 mm</td>
+        </tr>
+        <tr>
+          <td >Độ Cứng Đũa:</td>
+          <td>Cứng</td>
+        </tr>
+        <tr>
+          <td >Điểm Cân Bằng:</td>
+          <td>Nặng Đầu</td>
+        </tr>
+        <tr>
+          <td >Phong Cách Chơi:</td>
+          <td>Tấn Công</td>
+        </tr>
+        <tr>
+          <td >Nội Dung Chơi:</td>
+          <td>Đánh Đơn Và Đôi</td>
+        </tr>
+        <tr>
+          <th style=>Trọng Lượng:</td>
+          <td>	4U: 80 - 84g</td>
+        </tr>
+      </tbody>
+
+   </table>
+  </div>
+</div>
+</div>
+  </div>
+      <!------------------------------------------------------------------------------------------------->
+
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Tại sao chọn G9sport?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Sản phẩm chính hãng</h3>
+                    <p>100% sản phẩm nhập khẩu chính hãng từ các thương hiệu uy tín như Yonex, Victor, Li-Ning với đầy đủ tem bảo hành quốc tế.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Giao hàng nhanh chóng</h3>
+                    <p>Giao hàng miễn phí toàn quốc trong 1-2 ngày, đóng gói cẩn thận và bảo đảm sản phẩm nguyên vẹn khi đến tay khách hàng.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3>Dịch vụ căng cước</h3>
+                    <p>Dịch vụ căng cước chuyên nghiệp với máy móc hiện đại, đội ngũ kỹ thuật viên giàu kinh nghiệm đảm bảo độ căng chuẩn xác.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Về G9sport</h2>
+                    <p>
+                        Với hơn 10 năm kinh nghiệm trong ngành cầu lông, G9sport tự hào là địa chỉ tin cậy của các vận động viên chuyên nghiệp và người chơi nghiệp dư trên toàn quốc.
+                    </p>
+                    <p>
+                        Chúng tôi cam kết mang đến cho khách hàng những sản phẩm chất lượng cao nhất với giá cả hợp lý. Đội ngũ nhân viên am hiểu sâu về cầu lông sẽ tư vấn giúp bạn chọn được sản phẩm phù hợp nhất.
+                    </p>
+                    <p>
+                        Không chỉ bán hàng, chúng tôi còn cung cấp dịch vụ bảo hành, sửa chữa và căng cước chuyên nghiệp, đảm bảo vợt của bạn luôn trong tình trạng tốt nhất.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <div class="placeholder-image">
+                      <img src="https://cdn.shopvnb.com/uploads/images/tin_tuc/hinh-anh-vot-cau-long-3-1687828854.webp" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">    
+                    <h3>Liên hệ</h3>
+                    <p>📍 Địa chỉ: [Địa chỉ cửa hàng]</p>
+                    <p>📞 Hotline: [Số điện thoại]</p>
+                    <p>✉️ Email: [Email liên hệ]</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Chính sách</h3>
+                    <a href="#">Chính sách bảo hành</a>
+                    <a href="#">Chính sách đổi trả</a>
+                    <a href="#">Chính sách giao hàng</a>
+                    <a href="#">Chính sách bảo mật</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Hỗ trợ</h3>
+                    <a href="#">Hướng dẫn mua hàng</a>
+                    <a href="#">Hướng dẫn thanh toán</a>
+                    <a href="#">Câu hỏi thường gặp</a>
+                    <a href="#">Tư vấn chọn vợt</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Theo dõi chúng tôi</h3>
+                    <a href="#">📘 Facebook</a>
+                    <a href="#">📷 Instagram</a>
+                    <a href="#">📺 YouTube</a>
+                    <a href="#">📱 Zalo</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 G9sports Store. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+  <script src="JS/AddToCart.js"></script>
+    <body>
+        </html>

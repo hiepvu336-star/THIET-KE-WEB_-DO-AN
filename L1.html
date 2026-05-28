@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G9sport - Cửa Hàng Vợt Cầu Lông Chuyên Nghiệp</title>
+    <link href="CSS/LINING.css" rel="stylesheet" type="text/css">
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+      
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="logo">
+                    G9sport
+                </div>
+                <div class="header-right">
+                    <div class="search-box">
+                        <input type="text" placeholder="Tìm kiếm...">
+                        <button type="submit">🔍</button>
+                    </div>
+                    <div class="user-actions">
+                        <a href="GioHang.html" class="cart-icon">🛒</a>
+                        <a href="Admin.html">👤</a>
+                        <a href="#">❤️</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="nav-container">
+ <ul class="nav-menu">
+                    <li><a href="Home.html">Trang chủ</a></li>
+                    <li><a href="HotNew.html">NEW & Nổi Bật</a></li>
+                    <li><a href="TrangSanPham.html" class="active">Sản Phẩm</a></li>
+                    <li><a href="Gioithieu.html">Giới Thiệu</a></li>
+                    <li><a href="tintuc.html">Tin tức</a></li>
+                    <li><a href="Lienhe.html">Liên hệ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+   
+    <!--------------------------------------------------------------------->
+
+
+<div class="container ">
+  <div class="row w-100 mx-auto">
+    <!-- Hình ảnh sản phẩm -->
+ <div class="col-md-4 text-center">
+   
+    <img id="mainImage" src="image_Lining/Lining (1).webp" class="img-fluid mb-3" alt="Vợt cầu lông">
+
+    <div class="d-flex justify-content-center gap-2">
+      <img src="image_Lining/SPLiNing1 (1).webp" class="img-thumbnail thumb" width="60">
+      <img src="image_Lining/SPLiNing1 (2).webp" class="img-thumbnail thumb" width="60">
+      <img src="image_Lining/SPLiNing1 (3).webp" class="img-thumbnail thumb" width="60">
+      <img src="image_Lining/SPLiNing1 (4).webp" class="img-thumbnail thumb" width="60">
+    </div>
+  </div>
+
+    <!-- Thông tin sản phẩm -->
+    <div class="col-md-8">
+      <h2>Vợt Cầu Lông Lining Halbertec 3000</h2>
+      <p>Mã: <span class="text-danger">VNB024963</span> | Tình trạng: <span class="text-success">Còn hàng</span></p>
+      <h5 class="text-danger fw-bold">1.390.000 ₫ <del class="text-muted fs-6 ms-2">1.668.000 ₫</del></h5>
+
+      <!-- Chọn phiên bản -->
+      <div class="my-3">
+        <label class="form-label fw-bold">Chọn [Phiên bản]:</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio"  checked >
+          <label class="form-check-label">Có bảo hành (CH) - 1.390.000 ₫</label>
+        </div>
+      </div>
+
+      <!-- Ưu đãi -->
+      <div class="border p-3 rounded">
+        <h6 class="text-danger"><i class="bi bi-gift-fill"></i> ƯU ĐÃI</h6>
+        <ul class="list-unstyled">
+          <li>🎁 Tặng 2 quấn cán vợt</li>
+          <li>✅ Sản phẩm cam kết chính hãng</li>
+          <li>✅ Bảo hành chính hãng</li>
+        </ul>
+        <hr>
+        <h6 class="text-primary">Ưu đãi thêm khi mua sản phẩm tại <b>VNB Premium</b></h6>
+        <ul class="list-unstyled">
+          <li>✅ Sơn logo miễn phí</li>
+          <li>✅ Bảo hành lưới đan 72 giờ</li>
+          <li>✅ Thay gen miễn phí trọn đời</li>
+        </ul>
+      </div>
+
+      <!-- nút -->
+<div class="d-flex align-items-center mt-3 gap-3">
+  <div class="input-group" style="width: 100px;">
+    <button class="btn btn-outline-secondary" type="button" id="decreaseBtn">-</button>
+    <input type="text" class="form-control text-center" value="1" id="quantityInput">
+    <button class="btn btn-outline-secondary" type="button" id="increaseBtn">+</button>
+  </div>
+  <button class="btn btn-danger text-white fw-bold"
+        id="addToCartDetailBtn"
+        data-product-id="lining-halbertec-3000"
+        data-product-name="Vợt Cầu Lông Lining Halbertec 3000"
+        data-product-price="1390000"
+        data-product-image="image_Lining/Lining (1).webp">
+    THÊM VÀO GIỎ HÀNG
+</button>
+</div>
+    </div>
+
+<!--------------------------------------------BỐ CỤC 2 PHẦN NAVS VÀ CONTAINER-------------------------------------------------->
+<ul class="nav nav-tabs mb-4" id="productTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active text-danger fw-bold" id="desc-tab" data-bs-toggle="tab" data-bs-target="#desc" type="button" role="tab">
+      MÔ TẢ SẢN PHẨM
+    </button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link text-dark fw-bold" id="spec-tab" data-bs-toggle="tab" data-bs-target="#spec" type="button" role="tab">
+      THÔNG SỐ KỸ THUẬT
+    </button>
+  </li>
+</ul>
+<div class="tab-content" id="productTabContent">
+  <div class="tab-pane fade show active" id="desc" role="tabpanel">
+    <b>1. Giới thiệu Vợt cầu lông Lining Halbertec 3000</b><br>
+    <p>- Vợt cầu lông Lining Halbertec 3000 được thương hiệu Lining cho ra mắt năm 2025 tiếp nối sự thành công của các dòng vợt Lining Halberte đang làm mưa làm gió trên thị trường cầu lông thời gian vừa qua. Để giúp người chơi được đa dạng hơn về sự lựa chọn phù hợp về trình độ cũng như giá thành hơn.</p>
+    <p>- Lining Halbertec 3000 có một thiết kế cực kỳ bắt mắt và hiện đại, với màu sắc nổi bật và kiểu dáng thể thao cuốn hút. Được cấu tạo từ chất liệu carbon cao cấp giúp vợt đảm bảo độ bền và chịu được lực căng tối đa lên đến 28 lbs, kết hợp với công nghệ giúp cải thiện điểm uốn trên trục vợt, làm trục vợt mỏng hỗ trợ những cú đập có độ chính xác hơn và linh hoạt hơn.</p> 
+    <img src="image_Lining/SPLiNing1 (2).webp" width="60%" alt="Vợt cầu lông Lining Halbertec 3000">
+    <p>- Vợt Cầu Lông Lining Halbertec 3000 có đũa vợt mỏng 6,8mm linh hoạt và hệ thống hấp thụ sốc mật độ cao giúp cây vợt ổn định trong những pha cầu có cường độ mạnh, nhanh. Đũa vợt còn giúp cải thiện khả năng phòng thủ và phản công nhanh, đặc biệt phù hợp với những tay vợt có lối chơi linh hoạt. Thiết kế này hỗ trợ người chơi trong các pha cầu bền, giúp tạo ra những cú đánh ổn định và có độ kiểm soát tốt hơn trên sân đấu.</p>
+    <img src="image_Lining/SPLiNing1 (3).webp" width="60%" alt="Vợt cầu lông Lining Halbertec 3000">
+    <p>Với những công nghệ tiên tiến nhất 2025, vợt cầu lông Lining Halbertec 3000 hứa hẹn sẽ là siêu phẩm cực HOT trong thời gian sắp tới với thiết kế đẹp mắt, khả năng chơi toàn diện, mạnh mẽ và tốc độ. Ngoài ra người chơi cũng có thể tham khảo một số mẫu vợt cầu lông Lining khác.</p>
+
+   <p> <b>2. Thông số vợt cầu lông Lining Halbertec 3000</b></p>
+   
+- Thương hiệu: Lining</p>
+<p>
+- Màu sắc: Trắng - Đen - Xanh</p>
+<p>
+- Chất liệu khung vợt: Carbon Fiber </p>
+<p>
+- Chất liệu thân vợt: Carbon Fiber </p>
+<p>
+- Điểm cân bằng: 295 ± 2 mm</p>
+<p>
+- Trọng lượng: 4U, 5U</p>
+<p>
+- Chiều dài vợt: 675mm</p>
+<p>
+- Đường kính đũa vợt: 6.8mm</p>
+<p>
+- Độ cứng đũa: Trung bình</p>
+<p>
+- Chu vi cán cầm: G5</p>
+<p>
+- Mức căng tối đa: 4U ≤ 28LBS, 5U ≤ 28LBS
+</p>
+<p>
+   <b> 3. Các ưu điểm và công nghệ tích hợp trên vợt cầu lông Lining Halbertec 3000</b>
+</p>
+<p>
+- 6.8mm High-Modulus Slim Shaft: Vợt Lining Halbertec 3000 được thiết kế với trục vợt mỏng, chỉ có đường kính 6.8mm, giúp tăng cường sự nhanh nhạy của các cú xoay và khả năng càn lướt trong không khí. Công nghệ này cũng đem đến cải thiện đáng kể về điểm uốn trên trục thân vợt, làm tăng cảm ứng nhanh chóng và tốc độ ra vợt đáng kể.
+</p>
+<p>
+- Sonic Boom System: công nghệ ép khí và hiệu ứng siêu âm, Vợt cầu lông Lining Halbertec 3000 mang đến một trải nghiệm cầu lông độc đáo, kết hợp giữa sức mạnh, tốc độ và âm thanh mạnh mẽ.
+</p>
+<p>
+- HDF Shock Absorption System: Hệ thống hấp thụ chấn mật độ cao giúp cải thiện tối đa hiệu suất tăng  cường tốc độ linh hoạt cho tấn công
+</p>
+<p>
+    - High Modulus Graphite: Lining Halbertec 3000 sử dụng chất liệu carbon cao cấp với độ bền bỉ và độ cứng cáp vượt trội, cho khung và thân vợt chịu được lực tốt hơn, không dễ xước hay gãy khi gặp va chạm cho vợt khả năng chịu lực căng tối đa lên tới 28lbs.
+</p>
+<img src="https://cdn.shopvnb.com/uploads/images/tin_tuc/vot-cau-long-lining-halbertec-5000-noi-dia-trung-7-1694121507.webp" width="60%" alt="Vợt cầu lông Lining Halbertec 3000">
+<p>
+    - HOT MELT: Công nghệ áp dụng trên khung vợt cầu lông của nhà Lining. Công nghệ này giúp nhựa được phân phối đồng đều và kết hợp chặt chẽ hơn với sợi carbon giúp cải thiện sức mạnh và cung cấp trải nghiệm hoàn hảo cho người chơi.
+</p>
+<p>
+    4.<b>Đối tượng phù hợp với vợt cầu lông Lining Halbertec 3000</b> 
+    </br>
+- Với phiên bản 4U sẽ dành cho những bạn có trình độ trung bình, các bạn đang chơi cầu phong trào. Phiên bản 5U sẽ dành cho các bạn có lực tay yếu, hướng đến các bạn nữ các bạn mới chơi.
+</br>
+- Nếu bạn yêu thích lối đánh công thủ toàn diện thiên về kiểm soát cầu thì đây sẽ là lựa chọn đúng đắn cho bạn trong phân khúc tầm trung.
+</p>
+
+</div>
+  <div class="tab-pane fade" id="spec" role="tabpanel">
+   <table  class="table table-bordered">
+      <thead>
+        <tr>
+          <th  style="width:30%;">Trình Độ Chơi:</th>
+          <td style="width:70%;">Mới Chơi</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td >Chiều dài vợt:</td>
+          <td>675 mm</td>
+        </tr>
+        <tr>
+          <td >Độ Cứng Đũa:</td>
+          <td>Trung Bình</td>
+        </tr>
+        <tr>
+          <td >Điểm Cân Bằng:t</td>
+          <td>Cân Bằng</td>
+        </tr>
+        <tr>
+          <td >Phong Cách Chơi:</td>
+          <td>Công Thủ Toàn Diện</td>
+        </tr>
+        <tr>
+          <td >Nội Dung Chơi:</td>
+          <td>Cả Đơn và Đôi</td>
+        </tr>
+        <tr>
+          <th style=>Trọng Lượng:</td>
+          <td>4U: 80 - 84g,5U: 75 - 79g</td>
+        </tr>
+      </tbody>
+
+   </table>
+  </div>
+</div>
+</div>
+  </div>
+      <!------------------------------------------------------------------------------------------------->
+
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Tại sao chọn G9sport?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Sản phẩm chính hãng</h3>
+                    <p>100% sản phẩm nhập khẩu chính hãng từ các thương hiệu uy tín như Yonex, Victor, Li-Ning với đầy đủ tem bảo hành quốc tế.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Giao hàng nhanh chóng</h3>
+                    <p>Giao hàng miễn phí toàn quốc trong 1-2 ngày, đóng gói cẩn thận và bảo đảm sản phẩm nguyên vẹn khi đến tay khách hàng.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3>Dịch vụ căng cước</h3>
+                    <p>Dịch vụ căng cước chuyên nghiệp với máy móc hiện đại, đội ngũ kỹ thuật viên giàu kinh nghiệm đảm bảo độ căng chuẩn xác.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Về G9sport</h2>
+                    <p>
+                        Với hơn 10 năm kinh nghiệm trong ngành cầu lông, G9sport tự hào là địa chỉ tin cậy của các vận động viên chuyên nghiệp và người chơi nghiệp dư trên toàn quốc.
+                    </p>
+                    <p>
+                        Chúng tôi cam kết mang đến cho khách hàng những sản phẩm chất lượng cao nhất với giá cả hợp lý. Đội ngũ nhân viên am hiểu sâu về cầu lông sẽ tư vấn giúp bạn chọn được sản phẩm phù hợp nhất.
+                    </p>
+                    <p>
+                        Không chỉ bán hàng, chúng tôi còn cung cấp dịch vụ bảo hành, sửa chữa và căng cước chuyên nghiệp, đảm bảo vợt của bạn luôn trong tình trạng tốt nhất.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <div class="placeholder-image">
+                      <img src="https://cdn.shopvnb.com/uploads/images/tin_tuc/hinh-anh-vot-cau-long-3-1687828854.webp" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">    
+                    <h3>Liên hệ</h3>
+                    <p>📍 Địa chỉ: [Địa chỉ cửa hàng]</p>
+                    <p>📞 Hotline: [Số điện thoại]</p>
+                    <p>✉️ Email: [Email liên hệ]</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Chính sách</h3>
+                    <a href="#">Chính sách bảo hành</a>
+                    <a href="#">Chính sách đổi trả</a>
+                    <a href="#">Chính sách giao hàng</a>
+                    <a href="#">Chính sách bảo mật</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Hỗ trợ</h3>
+                    <a href="#">Hướng dẫn mua hàng</a>
+                    <a href="#">Hướng dẫn thanh toán</a>
+                    <a href="#">Câu hỏi thường gặp</a>
+                    <a href="#">Tư vấn chọn vợt</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Theo dõi chúng tôi</h3>
+                    <a href="#">📘 Facebook</a>
+                    <a href="#">📷 Instagram</a>
+                    <a href="#">📺 YouTube</a>
+                    <a href="#">📱 Zalo</a>
+                </div>
+            </div>
+           
+            <div class="footer-bottom">
+                <p>&copy; 2025 G9sports Store. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/AddToCart.js"></script>
+    <body>
+        </html>

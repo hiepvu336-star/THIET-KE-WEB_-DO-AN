@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G9sport - Cửa Hàng Vợt Cầu Lông Chuyên Nghiệp</title>
+    <link href="CSS/vot.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="CSS/all.min.css" >
+    <link href="font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <!---Header-->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="logo">
+
+                    G9sport
+                </div>
+                <div class="header-right">
+                    <div class="search-box">
+                        <form class="d-flex">
+                            <input class="form-control  me-2" id="searchInput" type="text" placeholder="Tìm kiếm...">
+                            <button class="btn btn-outline-light" type="submit">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="user-actions">
+                    <a href="GioHang.html" class="cart-icon">🛒</a>
+                    <a href="Admin.html">👤</a>
+                    <li class="has-submenu">
+                        <a href="#">💁‍♂️</a>
+                        <div class="submenu">
+                            <a href="DangNhap.html"> Logout</a>
+
+                        </div>
+                    </li>
+
+
+                </div>
+            </div>
+        </div>
+        </div>
+        <nav class="main-nav">
+            <div class="nav-container">
+                <ul class="nav-menu">
+                    <li><a href="Home.html" class="active">Trang chủ</a></li>
+                    <li><a href="Home.html#New&Hot">NEW & HOT</a></li>
+                    <li class="has-submenu">
+                        <a href="TrangSanPham.html">Sản phẩm</a>
+                    </li>
+                    <li><a href="Gioithieu.html">Giới Thiệu</a></li>
+                    <li><a href="tintuc.html">Tin tức</a></li>
+                    <li><a href="Lienhe.html">Liên hệ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section >
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image_Banner/banner2.jpg" class="d-block w-100" alt="Banner 1"
+                        style="object-fit:cover; height:480px; filter:brightness(0.6);">
+                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center"
+                        style="top:0; bottom:0;">
+                        <h1>G9sport Badminton Store</h1>
+                        <p>Chuyên cung cấp vợt cầu lông chính hãng từ các thương hiệu hàng đầu thế giới</p>
+                        <a href="#" class="cta-button btn btn-warning btn-lg text-white" style="background: linear-gradient(90deg, #ff9800, #ff5e62); border: none;">Khám phá ngay</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image_Banner/banner1.jpg" class="d-block w-100" alt="Banner 2"
+                        style="object-fit:cover; height:480px; filter:brightness(0.6);">
+                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center"
+                        style="top:0; bottom:0;">
+                        <h1>Ưu đãi mùa hè</h1>
+                        <p>Giảm giá lên đến 30% cho tất cả sản phẩm Yonex, Victor, Lining</p>
+                        <a href="#" class="cta-button btn btn-warning btn-lg text-white" style="background: linear-gradient(90deg, #ff9800, #ff5e62); border: none;">Xem ưu đãi</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image_Banner/banner3.jpg" class="d-block w-100" alt="Banner 3"
+                        style="object-fit:cover; height:480px; filter:brightness(0.6);">
+                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center"
+                        style="top:0; bottom:0;">
+                        <h1>Miễn phí giao hàng toàn quốc</h1>
+                        <p>Đặt hàng ngay hôm nay để nhận ưu đãi vận chuyển miễn phí!</p>
+                        <a href="#" class="cta-button btn btn-warning btn-lg text-white" style="background: linear-gradient(90deg, #ff9800, #ff5e62); border: none;">Mua ngay</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------>
+    <!--Main-->
+    <!--Products-->
+     <!--NEW&HOT-->
+            <section class="featured-products" id="New&Hot">
+                <div class="container">
+                    <h2 class="section-title">🔥NEW & HOT🔥</h2>
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <div class="product-badge">Cao cấp</div>
+                            <div class="product-image">
+                                <a href="V1.html">
+                                    <img src="image_Victor/Victor (2).webp" alt="Victor Thruster Ryuga Metallic CPS" />
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">
+                                    <a href="#" style="text-decoration: none; color: inherit;">
+                                        Vợt Cầu Lông Victor Thruster Ryuga Metallic CPS
+                                    </a>
+                                </h3>
+                                <p class="product-desc">Kiểu dáng sang trọng, dễ điều khiển</p>
+                                <div class="product-price"><span class="current-price">4.050.000₫</span></div>
+                                <div class="product-rating">
+                                    <div class="stars">★★★★★</div><span class="rating-text">(88 đánh giá)</span>
+                                </div>
+                                <button class="add-to-cart" data-product-id="victor-thruster-ryuga-metallic-cps"
+                                    data-product-name="Vợt Cầu Lông Victor Thruster Ryuga Metallic CPS"
+                                
+                                    data-product-price="4050000" data-product-image="image_Victor/Victor (2).webp">
+                                    Thêm vào giỏ
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                        <div class="product-badge">Limited</div>
+                        <div class="product-image">
+                            <img src="image_Yonex\Lining (11).webp" alt="Vợt Cầu Lông Yonex Astrox 88D Pro 2024" />
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Vợt Cầu Lông Yonex Astrox 88D Pro 2024</h3>
+                            <div class="product-price"><span class="current-price">4.599.000 ₫</span></div>
+                            <div class="product-rating"><div class="stars">★★★★★</div><span class="rating-text">(98 đánh giá)</span></div>
+                            <button class="add-to-cart" 
+                                data-product-id="Yonex-Astrox-88D-Pro-2024"
+                                data-product-name="Vợt Cầu Lông Yonex Astrox 88D Pro 2024"
+                                data-product-price="4599000"
+                                data-product-image="image_Yonex\Lining (11).webp">
+                            Thêm vào giỏ</button>
+                        </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-badge">Mới nhất</div>
+                            <div class="product-image">
+                                <img src="image_Yonex\Lining (12).webp" alt="Vợt Cầu Lông Yonex Astrox 88S Pro 2024" />
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Vợt Cầu Lông Yonex Astrox 88S Pro 2024</h3>
+                                <p class="product-desc">Công nghệ mới nhất, đánh chuẩn xác</p>
+                                <div class="product-price"><span class="current-price">4.599.000 ₫</span></div>
+                                <div class="product-rating"><div class="stars">★★★★★</div><span class="rating-text">(102 đánh giá)</span></div>
+                                <button class="add-to-cart"
+                                    data-product-id="Yonex-Astrox-88S-Pro-2024"
+                                    data-product-name="Vợt Cầu Lông Yonex Astrox 88S Pro 2024"
+                                    data-product-price="4599000"
+                                    data-product-image="image_Yonex\Lining (12).webp">
+                                    Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-badge">Mới nhất</div>
+                            <div class="product-image">
+                                <img src="image_Yonex/SPYonex (1).webp" alt="Vợt Cầu Lông Yonex Astrox 100 Tour" />
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Vợt Cầu Lông Yonex Astrox 100 Tour</h3>
+                                <p class="product-desc">Phù hợp cho người có lực cổ tay trình độ khá ,Lối đánh thiên công, đập cầu.</p>
+                                <div class="product-price"><span class="current-price">3.789.000 ₫</span></div>
+                                <div class="product-rating"><div class="stars">★★★★★</div><span class="rating-text">(52 đánh giá)</span></div>
+                                <button class="add-to-cart"
+                                    data-product-id="Yonex-Astrox-100-Tour"
+                                    data-product-name="Vợt Cầu Lông Yonex Astrox 100 Tour"
+                                    data-product-price="3789000"
+                                    data-product-image="image_Yonex/Yonex(1).webp">
+                                    Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                         <div class="product-card" data-category="victor" data-product-price="3240000">
+                            <div class="product-badge">Limited</div>
+                            <div class="product-image">
+                                <a href="V2.html">
+                                <img src="image_Victor\Victor (7).webp" alt="Victor Thruster Shenron G – DragonBall Z" />
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Vợt cầu lông Victor Shenron G – DragonBall Z 2025</h3>
+                                <p class="product-desc">Phiên bản giới hạn, thiết kế độc đáo</p>
+                                <div class="product-price"><span class="current-price">3.240.000₫</span></div>
+                                <div class="product-rating"><div class="stars">★★★★★</div><span class="rating-text">(98 đánh giá)</span></div>
+                                        <button  class="add-to-cart"
+                                            data-product-id="victor-shenron-g"
+                                            data-product-name="Vợt Cầu Lông Victor Shenron G – DragonBall Z 2025"
+                                            data-product-price="3240000"
+                                            data-product-image="image_Victor\Victor (7).webp">
+                                        Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        <div class="product-card">
+                            <div class="product-badge">Mới nhất</div>
+                            <div class="product-image">
+                                <img src="image_Yonex/SPYonex (2).webp " alt="Vợt Cầu Lông Yonex Nanoflare 1000 Tour" />
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Vợt Cầu Lông Yonex Nanoflare 1000 Tour</h3>
+                                <p class="product-desc"> Sử dụng các công nghệ tân tiến nhất hiện nay như HM Graphite, Nanocell NEO, Speed Assist Bumper và mũ chụp EB Cap Plus.</p>
+                                <div class="product-price"><span class="current-price">3.589.000 ₫</span></div>
+                                <div class="product-rating"><div class="stars">★★★★★</div><span class="rating-text">(25 đánh giá)</span></div>
+                                <button class="add-to-cart"
+                                    data-product-id="Yonex-Astrox-100-Tour"
+                                    data-product-name="Vợt Cầu Lông Yonex Nanoflare 1000 Tour"
+                                    data-product-price="3589000"
+                                    data-product-image="image_Yonex/Yonex(2).webp">
+                                    Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-badge">Cao cấp</div>
+                            <div class="product-image">
+                                <a href="L2.html" alt="Xem chi tiết vợt cầu lông Lining Woods N90">
+                                    <img src="image_Lining/Lining (7).webp" alt="Vợt cầu lông Lining Woods N90" />
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Vợt cầu lông Lining Woods N90</h3>
+                                <p class="product-desc">Vợt nổi bật cho tay vợt có sức mạnh</p>
+                                <div class="product-price">
+                                    <span class="current-price">5.049.000₫</span>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="stars">★★★★★</div>
+                                    <span class="rating-text">(75 đánh giá)</span>
+                                </div>
+                                <button class="add-to-cart"
+                                    data-product-id="Lining-Woods-N90"
+                                    data-product-name="Vợt cầu lông Lining Woods N90"
+                                    data-product-price="5049000"
+                                    data-product-image="image_Lining/Lining (7).webp">
+                                    Thêm vào giỏ
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-badge">Cao cấp</div>
+                            <div class="product-image">
+                                <a href="L1.html" alt="Xem chi tiết vợt cầu lông Lining Halbertec 3000">
+                                    <img src="image_Lining/Lining (1).webp" alt="Vợt cầu lông Lining Halbertec 3000" />
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">
+                                    <a href="L1.html" style="text-decoration: none; color: inherit;">
+                                        Vợt cầu lông Lining Halbertec 3000
+                                    </a>
+                                </h3>
+                                <p class="product-desc">Vợt chất lượng cao dành cho người chơi phong trào</p>
+                                <div class="product-price">
+                                    <span class="current-price">1.390.000₫</span>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="stars">★★★★★</div>
+                                    <span class="rating-text">(20 đánh giá)</span>
+                                </div>
+                                <button class="add-to-cart"
+                                        data-product-id="lining-halbertec-3000"
+                                        data-product-name="Vợt cầu lông Lining Halbertec 3000"
+                                        data-product-price="1390000"
+                                        data-product-image="image_Lining/Lining (1).webp">
+                                    Thêm vào giỏ
+                                </button>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div> 
+            </section>
+    <!--Lining-->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Sản phẩm Lining</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-badge">Cao cấp</div>
+                    <div class="product-image">
+                        <a href="L1.html" alt="Xem chi tiết vợt cầu lông Lining Halbertec 3000">
+                            <img src="image_Lining/Lining (1).webp" alt="Vợt cầu lông Lining Halbertec 3000" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="L1.html" style="text-decoration: none; color: inherit;">
+                                Vợt cầu lông Lining Halbertec 3000
+                            </a>
+                        </h3>
+                        <p class="product-desc">Vợt chất lượng cao dành cho người chơi phong trào</p>
+                        <div class="product-price">
+                            <span class="current-price">1.390.000₫</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★★</div>
+                            <span class="rating-text">(20 đánh giá)</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="lining-halbertec-3000"
+                            data-product-name="Vợt cầu lông Lining Halbertec 3000" data-product-price="1390000"
+                            data-product-image="image_Lining/Lining (1).webp">
+                            Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">Cao cấp</div>
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="image_Lining/Lining (2).webp" alt="Vợt cầu lông Lining Halbertec 4000" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="#" style="text-decoration: none; color: inherit;">
+                                Vợt cầu lông Lining Halbertec 4000
+                            </a>
+                        </h3>
+                        <p class="product-desc">Vợt công thủ toàn diện phù hợp cho mọi đối tượng</p>
+                        <div class="product-price">
+                            <span class="current-price">2.070.000₫</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★★</div>
+                            <span class="rating-text">(35 đánh giá)</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="lining-halbertec-4000"
+                            data-product-name="Vợt cầu lông Lining Halbertec 4000" data-product-price="2070000"
+                            data-product-image="image_Lining/Lining (2).webp">
+                            Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">Cao cấp</div>
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="image_Lining/Lining (3).webp" alt="Vợt cầu lông Lining Axforce BigBang" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="#" style="text-decoration: none; color: inherit;">
+                                Vợt cầu lông Lining Axforce BigBang
+                            </a>
+                        </h3>
+                        <p class="product-desc">Thiết kế đột phá cho cú đánh mạnh mẽ</p>
+                        <div class="product-price">
+                            <span class="current-price">1.990.000₫</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★★</div>
+                            <span class="rating-text">(42 đánh giá)</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="lining-axforce-bigbang"
+                            data-product-name="Vợt cầu lông Lining Axforce BigBang" data-product-price="1990000"
+                            data-product-image="image_Lining/Lining (3).webp">
+                            Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">Cao cấp</div>
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="image_Lining/Lining (4).webp" alt="Vợt cầu lông Lining Aeronaut 6000I" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="#" style="text-decoration: none; color: inherit;">
+                                Vợt cầu lông Lining Aeronaut 6000I
+                            </a>
+                        </h3>
+                        <p class="product-desc">Vợt kiểm soát tốt, phù hợp người chơi tấn công</p>
+                        <div class="product-price">
+                            <span class="current-price">2.190.000₫</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★★</div>
+                            <span class="rating-text">(50 đánh giá)</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="lining-aeronaut-6000i"
+                            data-product-name="Vợt cầu lông Lining Aeronaut 6000I" data-product-price="2190000"
+                            data-product-image="image_Lining/Lining (4).webp">
+                            Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">Cao cấp</div>
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="image_Lining/Lining (5).webp"
+                                alt="Vợt cầu lông Lining Axforce 90 New - Loh Kean Yew 2025" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="#" style="text-decoration: none; color: inherit;">
+                                Lining Axforce 90 New - Loh Kean Yew 2025
+                            </a>
+                        </h3>
+                        <p class="product-desc">Mẫu mới nhất cho vận động viên chuyên nghiệp</p>
+                        <div class="product-price">
+                            <span class="current-price">4.349.000₫</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★★</div>
+                            <span class="rating-text">(68 đánh giá)</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="lining-axforce-90-new"
+                            data-product-name="Lining Axforce 90 New - Loh Kean Yew 2025" data-product-price="4349000"
+                            data-product-image="image_Lining/Lining (5).webp">
+                            Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">Cao cấp</div>
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="image_Lining/Lining (6).webp" alt="Vợt cầu lông Lining Axforce 30" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="#" style="text-decoration: none; color: inherit;">
+                                Vợt cầu lông Lining Axforce 30
+                            </a>
+                        </h3>
+                        <p class="product-desc">Phù hợp cho người mới tập chơi và nâng cao</p>
+                        <div class="product-price">
+                            <span class="current-price">1.299.000₫</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★☆</div>
+                            <span class="rating-text">(18 đánh giá)</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="lining-axforce-30"
+                            data-product-name="Vợt cầu lông Lining Axforce 30" data-product-price="1299000"
+                            data-product-image="image_Lining/Lining (6).webp">
+                            Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+                            <div class="product-card">
+                <div class="product-badge">Chuyên nghiệp</div>
+                <div class="product-image">
+                    <img src="image_Lining/Lining (15).webp" alt="Vợt cầu lông Lining Calibar 900B" />
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Vợt cầu lông Lining Calibar 900B</h3>
+                    <p class="product-desc">Tăng cường kiểm soát cầu</p>
+                    <div class="product-price">
+                        <span class="current-price">4.690.000₫</span>
+                    </div>
+                    <div class="product-rating">
+                        <div class="stars">★★★★★</div>
+                        <span class="rating-text">(33 đánh giá)</span>
+                    </div>
+                            <button  class="add-to-cart"
+                                data-product-id="Lining-Calibar-900B"
+                                data-product-name="Vợt cầu lông Lining Calibar 900B"
+                                data-product-price="4690000"
+                                data-product-image="image_Lining/Lining (15).webp">
+                            Thêm vào giỏ
+                        </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-badge">Mới</div>
+                <div class="product-image">
+                    <img src="image_Lining/Lining (16).webp" alt="Vợt cầu lông Lining Aeronaut 7000B" />
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Vợt cầu lông Lining Aeronaut 7000B</h3>
+                    <p class="product-desc">Cảm giác đánh chính xác, nhẹ nhàng</p>
+                    <div class="product-price">
+                        <span class="current-price">4.050.000₫</span>
+                    </div>
+                    <div class="product-rating">
+                        <div class="stars">★★★★★</div>
+                        <span class="rating-text">(29 đánh giá)</span>
+                    </div>
+                    <button  class="add-to-cart"
+                                data-product-id="Lining-Aeronaut-7000B"
+                                data-product-name="Vợt cầu lông Lining Aeronaut 7000B"
+                                data-product-price="4050000"
+                                data-product-image="image_Lining/Lining (16).webp">
+                            Thêm vào giỏ
+                        </button>
+                </div>
+            </div>
+            </div>
+            <div class="next-page">
+                <a href="Home.html">1</a>
+                <a href="Lining.html">2</a>
+            </div>
+        </div>
+    </section>
+    <!--Victor-->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Sản phẩm VICTOR</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-badge">Cao cấp</div>
+                    <div class="product-image">
+                        <a href="V1.html">
+                            <img src="image_Victor/Victor (1).webp" alt="Victor Thruster Ryuga II Pro CPS" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="V1.html" style="text-decoration: none; color: inherit;">
+                                Vợt Cầu Lông Victor Thruster Ryuga II Pro CPS
+                            </a>
+                        </h3>
+                        <p class="product-desc">Sản phẩm chính hãng, thiết kế mạnh mẽ</p>
+                        <div class="product-price"><span class="current-price">4.150.000₫</span></div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★★</div><span class="rating-text">(94 đánh giá)</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="victor-thruster-ryuga-ii-pro-cps"
+                            data-product-name="Vợt Cầu Lông Victor Thruster Ryuga II Pro CPS"
+                            data-product-price="4150000" data-product-image="image_Victor/Victor (1).webp">
+                            Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">Cao cấp</div>
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="image_Victor/Victor (2).webp" alt="Victor Thruster Ryuga Metallic CPS" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="#" style="text-decoration: none; color: inherit;">
+                                Vợt Cầu Lông Victor Thruster Ryuga Metallic CPS
+                            </a>
+                        </h3>
+                        <p class="product-desc">Kiểu dáng sang trọng, dễ điều khiển</p>
+                        <div class="product-price"><span class="current-price">4.050.000₫</span></div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★★</div><span class="rating-text">(88 đánh giá)</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="victor-thruster-ryuga-metallic-cps"
+                            data-product-name="Vợt Cầu Lông Victor Thruster Ryuga Metallic CPS"
+                            data-product-price="4050000" data-product-image="image_Victor/Victor (2).webp">
+                            Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">Chính hãng</div>
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="image_Victor/Victor (3).webp" alt="Victor Auraspeed 90k II TD" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="#" style="text-decoration: none; color: inherit;">
+                                Vợt cầu lông Victor Auraspeed 90k II TD
+                            </a>
+                        </h3>
+                        <p class="product-desc">Tốc độ cao, phản xạ nhanh</p>
+                        <div class="product-price"><span class="current-price">3.100.000₫</span></div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★☆</div><span class="rating-text">(75 đánh giá)</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="victor-auraspeed-90k-ii-td"
+                            data-product-name="Vợt cầu lông Victor Auraspeed 90k II TD" data-product-price="3100000"
+                            data-product-image="image_Victor/Victor (3).webp">
+                            Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">Bán chạy</div>
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="image_Victor/Victor (4).webp" alt="Victor Thruster Ryuga II TD" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="#" style="text-decoration: none; color: inherit;">
+                                Vợt cầu lông Victor Thruster Ryuga II TD
+                            </a>
+                        </h3>
+                        <p class="product-desc">Thích hợp cho người mới nâng cao</p>
+                        <div class="product-price"><span class="current-price">3.100.000₫</span></div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★☆</div><span class="rating-text">(81 đánh giá)</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="victor-thruster-ryuga-ii-td"
+                            data-product-name="Vợt cầu lông Victor Thruster Ryuga II TD" data-product-price="3100000"
+                            data-product-image="image_Victor/Victor (4).webp">
+                            Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">Giá rẻ</div>
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="image_Victor/Victor (5).webp" alt="Victor Thruster HMR Pro" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="#" style="text-decoration: none; color: inherit;">
+                                Vợt cầu lông Victor Thruster HMR Pro
+                            </a>
+                        </h3>
+                        <p class="product-desc">Giá mềm, hiệu năng cao</p>
+                        <div class="product-price"><span class="current-price">1.390.000₫</span></div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★☆</div><span class="rating-text">(60 đánh giá)</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="victor-thruster-hmr-pro"
+                            data-product-name="Vợt cầu lông Victor Thruster HMR Pro" data-product-price="1390000"
+                            data-product-image="image_Victor/Victor (5).webp">
+                            Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">Hot</div>
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="image_Victor/Victor (6).webp" alt="Victor Ryuga TD/C" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="#" style="text-decoration: none; color: inherit;">
+                                Vợt Cầu Lông Victor Ryuga TD/C
+                            </a>
+                        </h3>
+                        <p class="product-desc">Thiết kế độc đáo, cảm giác tay tốt</p>
+                        <div class="product-price"><span class="current-price">2.450.000₫</span></div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★☆</div><span class="rating-text">(66 đánh giá)</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="victor-ryuga-td-c"
+                            data-product-name="Vợt Cầu Lông Victor Ryuga TD/C" data-product-price="2450000"
+                            data-product-image="image_Victor/Victor (6).webp">
+                            Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+                
+            <div class="product-card">
+                <div class="product-badge">Chuyên nghiệp</div>
+                <div class="product-image">
+                    <img src="image_Victor\Victor (15).webp" alt="Combo Mua Vợt Cầu Lông Victor ARS 90K Metallic" />
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Combo Mua Vợt Cầu Lông Victor ARS 90K Metallic Tặng Vợt ARS 9000 + Vợt Victor TK Ryuga CLS</h3>
+                    <p class="product-desc">Tăng cường kiểm soát cầu</p>
+                    <div class="product-price">
+                        <span class="current-price">5.330.000 ₫</span>
+                    </div>
+                    <div class="product-rating">
+                        <div class="stars">★★★★★</div>
+                        <span class="rating-text">(33 đánh giá)</span>
+                    </div>
+                    <button class="add-to-cart"
+                        data-product-id="victor-ars-90k-metallic"
+                        data-product-name="Vợt Cầu Lông Victor ARS 90K Metallic"
+                        data-product-price="5330000"
+                        data-product-image="image_Victor\Victor (15).webp">
+                        Thêm vào giỏ
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-badge">Mới</div>
+                <div class="product-image">
+                    <img src="image_Victor\Victor (16).webp" alt="Combo Mua Vợt Cầu Lông Victor DX-10 Metalic" />
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Combo Mua Vợt Cầu Lông Victor DX-10 Metalic Tặng Vợt Victor ARS 9990K + Vợt Victor TK Ryuga CLS</h3>
+                  
+                    <div class="product-price">
+                        <span class="current-price">5.330.000 ₫</span>
+                    </div>
+                    <div class="product-rating">
+                        <div class="stars">★★★★★</div>
+                        <span class="rating-text">(29 đánh giá)</span>
+                    </div>
+                    <button class="add-to-cart"
+                        data-product-id="victor-dx-10-metalic"
+                        data-product-name="Vợt Cầu Lông Victor DX-10 Metalic"
+                        data-product-price="5330000"
+                        data-product-image="image_Victor\Victor (16).webp">
+                        Thêm vào giỏ
+                </div>
+            </div>
+            </div>
+            <div class="next-page">
+                <a href="Home.html">1</a>
+                <a href="VICTOR.html">2</a>
+            </div>
+        </div>
+    </section>
+    <!--Kumpoo-->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Sản phẩm Kumpoo</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-badge">Cao cấp</div>
+                    <div class="product-image">
+                        <a href="K1.html">
+                            <img src="image_Kumpoo/Kumpoo (1).webp" alt="Vợt Cầu Lông Kumpoo JingZhou Chính Hãng" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="#" style="text-decoration: none; color: inherit;">
+                                Vợt Cầu Lông Kumpoo JingZhou Chính Hãng
+                            </a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="current-price">930.000 ₫</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="kumpoo-jingzhou"
+                            data-product-name="Vợt Cầu Lông Kumpoo JingZhou Chính Hãng" data-product-price="930000"
+                            data-product-image="image_Kumpoo/Kumpoo (1).webp">
+                            THÊM VÀO GIỎ
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">Cao cấp</div>
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="image_Kumpoo/Kumpoo (2).webp"
+                                alt="Set Vợt Cầu Lông Kumpoo Fecility New Year Chính Hãng" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="#" style="text-decoration: none; color: inherit;">
+                                Set Vợt Cầu Lông Kumpoo Fecility New Year Chính Hãng
+                            </a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="current-price">1.600.000 ₫</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="kumpoo-fecility-new-year"
+                            data-product-name="Set Vợt Cầu Lông Kumpoo Fecility New Year Chính Hãng"
+                            data-product-price="1600000" data-product-image="image_Kumpoo/Kumpoo (2).webp">
+                            THÊM VÀO GIỎ
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">Cao cấp</div>
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="image_Kumpoo/Kumpoo (3).webp" alt="SET Vợt Cầu Lông Kumpoo Small Energy" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="#" style="text-decoration: none; color: inherit;">
+                                SET Vợt Cầu Lông Kumpoo Small Energy
+                            </a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="current-price">980.000 ₫</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="kumpoo-small-energy"
+                            data-product-name="SET Vợt Cầu Lông Kumpoo Small Energy" data-product-price="980000"
+                            data-product-image="image_Kumpoo/Kumpoo (3).webp">
+                            THÊM VÀO GIỎ
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">Cao cấp</div>
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="image_Kumpoo/Kumpoo (4).webp" alt="Vợt Cầu Lông Kumpoo K01" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="#" style="text-decoration: none; color: inherit;">
+                                Vợt Cầu Lông Kumpoo K01
+                            </a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="current-price">690.000 ₫</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="kumpoo-k01"
+                            data-product-name="Vợt Cầu Lông Kumpoo K01" data-product-price="690000"
+                            data-product-image="image_Kumpoo/Kumpoo (4).webp">
+                            THÊM VÀO GIỎ
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">Cao cấp</div>
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="image_Kumpoo/Kumpoo (5).webp" alt="Vợt Cầu Lông Kumpoo YangZhou Chính Hãng" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="#" style="text-decoration: none; color: inherit;">
+                                Vợt Cầu Lông Kumpoo YangZhou Chính Hãng
+                            </a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="current-price">930.000 ₫</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="kumpoo-yangzhou"
+                            data-product-name="Vợt Cầu Lông Kumpoo YangZhou Chính Hãng" data-product-price="930000"
+                            data-product-image="image_Kumpoo/Kumpoo (5).webp">
+                            THÊM VÀO GIỎ
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">Cao cấp</div>
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="image_Kumpoo/Kumpoo (6).webp" alt="Vợt Cầu Lông Kumpoo Flower Partner" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="#" style="text-decoration: none; color: inherit;">
+                                Vợt Cầu Lông Kumpoo Flower Partner
+                            </a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="current-price">620.000 ₫</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="kumpoo-flower-partner"
+                            data-product-name="Vợt Cầu Lông Kumpoo Flower Partner" data-product-price="620000"
+                            data-product-image="image_Kumpoo/Kumpoo (6).webp">
+                            THÊM VÀO GIỎ
+                        </button>
+                    </div>
+                </div>
+
+                            <div class="product-card">
+                <div class="product-badge">Bán chạy</div>
+                <div class="product-image">
+                    <img src="image_Kumpoo\Kumpoo (15).webp" alt="Vợt cầu lông Kumpoo Power Control 520AS" />
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Vợt cầu lông Kumpoo Power Control 520AS
+</h3>
+                  
+                    <div class="product-price">
+                        <span class="current-price">410.000 ₫</span>
+                    </div>
+                    <div class="product-rating">
+                        <div class="stars">★★★★★</div>
+                        <span class="rating-text">(50 đánh giá)</span>
+                    </div>
+                    <button class="add-to-cart"
+                            data-product-id="kumpoo-power-control-520as"
+                            data-product-name="Vợt cầu lông Kumpoo Power Control 520AS"
+                            data-product-price="410000"
+                            data-product-image="image_Kumpoo\Kumpoo (15).webp">
+                        Thêm vào giỏ
+                </div>
+            </div>
+<!----------------------------------->
+            <div class="product-card">
+                <div class="product-badge">Chuyên nghiệp</div>
+                <div class="product-image">
+                    <img src="image_Kumpoo\Kumpoo (16).webp" alt="Vợt Cầu Lông Kumpoo Power Balanced 11 " />
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Cặp vợt cầu lông Kumpoo Power Control 520BS
+</h3>
+                   
+                    <div class="product-price">
+                        <span class="current-price">820.000 ₫</span>
+                    </div>
+                    <div class="product-rating">
+                        <div class="stars">★★★★☆</div>
+                        <span class="rating-text">(41 đánh giá)</span>
+                    </div>
+                    <button class="add-to-cart"
+                            data-product-id="kumpoo-power-balanced-11"
+                            data-product-name="Vợt Cầu Lông Kumpoo Power Balanced 11"
+                            data-product-price="820000"
+                            data-product-image="image_Kumpoo\Kumpoo (16).webp">
+                        Thêm vào giỏ
+                </div>
+            </div>
+            </div>
+            <div class="next-page">
+                <a href="Home.html">1</a>
+                <a href="KUMPOO.html">2</a>
+            </div>
+        </div>
+    </section>
+    <!--Yonex-->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Sản phẩm YONEX</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-badge">YONEX</div>
+                    <div class="product-image">
+                        <a href="Y1.html">
+                            <img src="image_Yonex/Lining (1).webp" alt="Yonex Arcsaber 0 Feel" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="Y1.html" style="text-decoration: none; color: inherit;">
+                                Yonex Arcsaber 0 Feel
+                            </a>
+                        </h3>
+                        <p class="product-desc">Vợt cầu lông chính hãng, nhẹ và linh hoạt</p>
+                        <div class="product-price"><span class="current-price">599.000 ₫</span></div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★☆</div><span class="rating-text">(Chưa có đánh giá)</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="yonex-arcsaber-0-feel"
+                            data-product-name="Yonex Arcsaber 0 Feel" data-product-price="599000"
+                            data-product-image="image_Yonex/Lining (1).webp">
+                            THÊM VÀO GIỎ
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">YONEX</div>
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="image_Yonex/Lining (2).webp" alt="Yonex Nanoflare 700 Pro 2024" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="#" style="text-decoration: none; color: inherit;">
+                                Nanoflare 700 Pro 2024
+                            </a>
+                        </h3>
+                        <p class="product-desc">Phiên bản nâng cấp 2024 cho tốc độ tối đa</p>
+                        <div class="product-price"><span class="current-price">4.199.000 ₫</span></div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★★</div><span class="rating-text">(Chưa có đánh giá)</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="yonex-nanoflare-700-pro-2024"
+                            data-product-name="Nanoflare 700 Pro 2024" data-product-price="4199000"
+                            data-product-image="image_Yonex/Lining (2).webp">
+                            THÊM VÀO GIỎ
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">YONEX</div>
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="image_Yonex/Lining (3).webp" alt="Yonex Nanoflare Starbucks" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="#" style="text-decoration: none; color: inherit;">
+                                Nanoflare Starbucks
+                            </a>
+                        </h3>
+                        <p class="product-desc">Phiên bản độc đáo với phối màu Starbucks</p>
+                        <div class="product-price"><span class="current-price">1.590.000 ₫</span></div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★☆</div><span class="rating-text">(Chưa có đánh giá)</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="yonex-nanoflare-starbucks"
+                            data-product-name="Nanoflare Starbucks" data-product-price="1590000"
+                            data-product-image="image_Yonex/Lining (3).webp">
+                            THÊM VÀO GIỎ
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">YONEX</div>
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="image_Yonex/Lining (4).webp" alt="Yonex Astrox 88S Pro 2024" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="#" style="text-decoration: none; color: inherit;">
+                                Astrox 88S Pro 2024
+                            </a>
+                        </h3>
+                        <p class="product-desc">Vợt cao cấp cho kiểm soát tuyệt vời</p>
+                        <div class="product-price"><span class="current-price">4.529.000 ₫</span></div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★★</div><span class="rating-text">(Chưa có đánh giá)</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="yonex-astrox-88s-pro-2024"
+                            data-product-name="Astrox 88S Pro 2024" data-product-price="4529000"
+                            data-product-image="image_Yonex/Lining (4).webp">
+                            THÊM VÀO GIỎ
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">YONEX</div>
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="image_Yonex/Lining (5).webp" alt="Yonex Arcsaber 0 Ability" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="#" style="text-decoration: none; color: inherit;">
+                                Arcsaber 0 Ability
+                            </a>
+                        </h3>
+                        <p class="product-desc">Thiết kế cân bằng, phù hợp người mới</p>
+                        <div class="product-price"><span class="current-price">599.000 ₫</span></div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★☆</div><span class="rating-text">(Chưa có đánh giá)</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="yonex-arcsaber-0-ability"
+                            data-product-name="Arcsaber 0 Ability" data-product-price="599000"
+                            data-product-image="image_Yonex/Lining (5).webp">
+                            THÊM VÀO GIỎ
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">YONEX</div>
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="image_Yonex/Lining (6).webp" alt="Yonex Arcsaber 0 Clear" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="#" style="text-decoration: none; color: inherit;">
+                                Arcsaber 0 Clear
+                            </a>
+                        </h3>
+                        <p class="product-desc">Cấu trúc nhẹ, dễ điều khiển cho người mới</p>
+                        <div class="product-price"><span class="current-price">599.000 ₫</span></div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★☆</div><span class="rating-text">(Chưa có đánh giá)</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="yonex-arcsaber-0-clear"
+                            data-product-name="Arcsaber 0 Clear" data-product-price="599000"
+                            data-product-image="image_Yonex/Lining (6).webp">
+                            THÊM VÀO GIỎ
+                        </button>
+                    </div>
+                </div>
+                            <div class="product-card">
+                <div class="product-badge">Khuyên dùng</div>
+                <div class="product-image">
+                    <img src="image_Yonex\Lining (15).webp" alt="Vợt cầu lông Yonex Nanoflare 700 Game" />
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Vợt cầu lông Yonex Nanoflare 700 Game
+
+</h3>
+                    
+                    <div class="product-price">
+                        <span class="current-price">1.899.000 ₫ </span>
+                    </div>
+                    <div class="product-rating">
+                        <div class="stars">★★★★☆</div>
+                        <span class="rating-text">(31 đánh giá)</span>
+                    </div>
+                    <button class="add-to-cart"
+                        data-product-id="Yonex-Nanoflare-700-Game"
+                        data-product-name="Vợt cầu lông Yonex Nanoflare 700 Game"
+                        data-product-price="1899000"
+                        data-product-image="image_Yonex\Lining (15).webp">
+                        Thêm vào giỏ
+                </div>
+            </div>
+<!----------------------------------->
+            <div class="product-card">
+                <div class="product-badge">Cao cấp</div>
+                <div class="product-image">
+                    <img src="image_Yonex\Lining (16).webp" alt="Vợt cầu lông Yonex Nanoflare 700 Tour" />
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Vợt cầu lông Yonex Nanoflare 700 Tour
+
+</h3>
+                  
+                    <div class="product-price">
+                        <span class="current-price">2.639.000 ₫</span>
+                    </div>
+                    <div class="product-rating">
+                        <div class="stars">★★★★★</div>
+                        <span class="rating-text">(45 đánh giá)</span>
+                    </div>
+                    <button class="add-to-cart"
+                        data-product-id="Yonex-Nanoflare-700-Tour"
+                        data-product-name="Vợt cầu lông Yonex Nanoflare 700 Tour"
+                        data-product-price="2639000"
+                        data-product-image="image_Yonex\Lining (16).webp">
+                        Thêm vào giỏ
+                </div>
+            </div>
+            </div>
+            <div class="next-page">
+                <a href="Home.html">1</a>
+                <a href="YONEX.html">2</a>
+            </div>
+        </div>
+    </section>
+    <!--VNB-->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Sản phẩm VNB</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-badge">Phổ thông</div>
+                    <div class="product-image">
+                        <a href="VNB1.html">
+                            <img src="image_VNB/VNB (1).webp" alt="Vợt cầu lông VNB V88 xanh chính hãng" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="#" style="text-decoration: none; color: inherit;">
+                                VNB V88 xanh chính hãng
+                            </a>
+                        </h3>
+                        <p class="product-desc">Vợt cầu lông chính hãng thiết kế màu xanh</p>
+                        <div class="product-price">
+                            <span class="current-price">638.000₫</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★☆</div>
+                            <span class="rating-text">(45 đánh giá)</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="vnb-v88-xanh"
+                            data-product-name="VNB V88 xanh chính hãng" data-product-price="638000"
+                            data-product-image="image_VNB/VNB (1).webp">
+                            Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">Phổ thông</div>
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="image_VNB/VNB (2).webp" alt="Vợt cầu lông VNB V200i Hồng" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="#" style="text-decoration: none; color: inherit;">
+                                VNB V200i Hồng
+                            </a>
+                        </h3>
+                        <p class="product-desc">Vợt màu hồng nhẹ nhàng, dành cho người mới</p>
+                        <div class="product-price">
+                            <span class="current-price">529.000₫</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★☆</div>
+                            <span class="rating-text">(36 đánh giá)</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="vnb-v200i-hong" data-product-name="VNB V200i Hồng"
+                            data-product-price="529000" data-product-image="image_VNB/VNB (2).webp">
+                            Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">Phổ thông</div>
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="image_VNB/VNB (3).webp" alt="VNB V88 cam chính hãng" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="#" style="text-decoration: none; color: inherit;">
+                                VNB V88 cam chính hãng
+                            </a>
+                        </h3>
+                        <p class="product-desc">Màu cam nổi bật, phù hợp cho mọi đối tượng</p>
+                        <div class="product-price">
+                            <span class="current-price">638.000₫</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★☆</div>
+                            <span class="rating-text">(28 đánh giá)</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="vnb-v88-cam"
+                            data-product-name="VNB V88 cam chính hãng" data-product-price="638000"
+                            data-product-image="image_VNB/VNB (3).webp">
+                            Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">Phổ thông</div>
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="image_VNB/VNB (4).webp" alt="VNB V200 Đỏ chính hãng" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="#" style="text-decoration: none; color: inherit;">
+                                VNB V200 Đỏ
+                            </a>
+                        </h3>
+                        <p class="product-desc">Vợt nhẹ, cân bằng tốt cho người chơi phong trào</p>
+                        <div class="product-price">
+                            <span class="current-price">529.000₫</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★☆</div>
+                            <span class="rating-text">(31 đánh giá)</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="vnb-v200-do" data-product-name="VNB V200 Đỏ"
+                            data-product-price="529000" data-product-image="image_VNB/VNB (4).webp">
+                            Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">Cao cấp</div>
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="image_VNB/VNB (5).webp" alt="VNB TC88B" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="#" style="text-decoration: none; color: inherit;">
+                                VNB TC88B
+                            </a>
+                        </h3>
+                        <p class="product-desc">Vợt chất liệu tốt, độ bền cao</p>
+                        <div class="product-price">
+                            <span class="current-price">799.000₫</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★★</div>
+                            <span class="rating-text">(58 đánh giá)</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="vnb-tc88b" data-product-name="VNB TC88B"
+                            data-product-price="799000" data-product-image="image_VNB/VNB (5).webp">
+                            Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">Cao cấp</div>
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="image_VNB/VNB (6).webp" alt="VNB TC88C" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="#" style="text-decoration: none; color: inherit;">
+                                VNB TC88C
+                            </a>
+                        </h3>
+                        <p class="product-desc">Phiên bản cải tiến từ TC88B, cân bằng hơn</p>
+                        <div class="product-price">
+                            <span class="current-price">799.000₫</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★★</div>
+                            <span class="rating-text">(50 đánh giá)</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="vnb-tc88c" data-product-name="VNB TC88C"
+                            data-product-price="799000" data-product-image="image_VNB/VNB (6).webp">
+                            Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">Huấn luyện</div>
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="image_VNB/VNB (7).webp" alt="VNB Carbon Training 150g" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="#" style="text-decoration: none; color: inherit;">
+                                Carbon Training 150g
+                            </a>
+                        </h3>
+                        <p class="product-desc">Vợt chuyên dụng cho luyện tập sức mạnh</p>
+                        <div class="product-price">
+                            <span class="current-price">698.000₫</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★☆</div>
+                            <span class="rating-text">(40 đánh giá)</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="vnb-carbon-training-150g"
+                            data-product-name="Carbon Training 150g" data-product-price="698000"
+                            data-product-image="image_VNB/VNB (7).webp">
+                            Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">Phổ thông</div>
+                    <div class="product-image">
+                        <a href="#">
+                            <img src="image_VNB/VNB (8).webp" alt="VNB V200 Xanh chính hãng" />
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">
+                            <a href="#" style="text-decoration: none; color: inherit;">
+                                VNB V200 Xanh
+                            </a>
+                        </h3>
+                        <p class="product-desc">Giá tốt, phù hợp người mới bắt đầu</p>
+                        <div class="product-price">
+                            <span class="current-price">529.000₫</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★☆</div>
+                            <span class="rating-text">(22 đánh giá)</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="vnb-v200-xanh" data-product-name="VNB V200 Xanh"
+                            data-product-price="529000" data-product-image="image_VNB/VNB (8).webp">
+                            Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Features-->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Tại sao chọn G9sport?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Sản phẩm chính hãng</h3>
+                    <p>100% sản phẩm nhập khẩu chính hãng từ các thương hiệu uy tín như Yonex, Victor, Li-Ning với đầy
+                        đủ tem bảo hành quốc tế.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Giao hàng nhanh chóng</h3>
+                    <p>Giao hàng miễn phí toàn quốc trong 1-2 ngày, đóng gói cẩn thận và bảo đảm sản phẩm nguyên vẹn khi
+                        đến tay khách hàng.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3>Dịch vụ căng cước</h3>
+                    <p>Dịch vụ căng cước chuyên nghiệp với máy móc hiện đại, đội ngũ kỹ thuật viên giàu kinh nghiệm đảm
+                        bảo độ căng chuẩn xác.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--About-->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Về G9sport</h2>
+                    <p>
+                        Với hơn 10 năm kinh nghiệm trong ngành cầu lông, G9sport tự hào là địa chỉ tin cậy của các vận
+                        động viên chuyên nghiệp và người chơi nghiệp dư trên toàn quốc.
+                    </p>
+                    <p>
+                        Chúng tôi cam kết mang đến cho khách hàng những sản phẩm chất lượng cao nhất với giá cả hợp lý.
+                        Đội ngũ nhân viên am hiểu sâu về cầu lông sẽ tư vấn giúp bạn chọn được sản phẩm phù hợp nhất.
+                    </p>
+                    <p>
+                        Không chỉ bán hàng, chúng tôi còn cung cấp dịch vụ bảo hành, sửa chữa và căng cước chuyên
+                        nghiệp, đảm bảo vợt của bạn luôn trong tình trạng tốt nhất.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <div class="placeholder-image">
+                        <img
+                            src="https://cdn.shopvnb.com/uploads/images/tin_tuc/hinh-anh-vot-cau-long-3-1687828854.webp" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------------------------------------------------------------------------------------------------------------------------>
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Liên hệ</h3>
+                    <p>📍 Địa chỉ: [Địa chỉ cửa hàng]</p>
+                    <p>📞 Hotline: [Số điện thoại]</p>
+                    <p>✉️ Email: [Email liên hệ]</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Chính sách</h3>
+                    <a href="#">Chính sách bảo hành</a>
+                    <a href="#">Chính sách đổi trả</a>
+                    <a href="#">Chính sách giao hàng</a>
+                    <a href="#">Chính sách bảo mật</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Hỗ trợ</h3>
+                    <a href="#">Hướng dẫn mua hàng</a>
+                    <a href="#">Hướng dẫn thanh toán</a>
+                    <a href="#">Câu hỏi thường gặp</a>
+                    <a href="#">Tư vấn chọn vợt</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Theo dõi chúng tôi</h3>
+                    <a href="#">📘 Facebook</a>
+                    <a href="#">📷 Instagram</a>
+                    <a href="#">📺 YouTube</a>
+                    <a href="#">📱 Zalo</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 G9sports Store. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+        <div class="contact-fixed">
+        <a href="tel:[Số điện thoại của bạn]" class="contact-icon phone-icon" aria-label="Gọi điện">
+            <img src="https://png.pngtree.com/png-vector/20191027/ourmid/pngtree-calling-telephone-line-icon-vector-png-image_1885981.jpg" alt="Điện thoại">
+        </a>
+        <a href="https://zalo.me/[Số Zalo của bạn]" target="_blank" class="contact-icon zalo-icon" aria-label="Chat Zalo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Icon_of_Zalo.svg/800px-Icon_of_Zalo.svg.png" alt="Zalo">
+        </a>
+        <a href="https://m.me/[ID Facebook Messenger của bạn]" target="_blank" class="contact-icon messenger-icon" aria-label="Chat Messenger">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/2048px-2023_Facebook_icon.svg.png" alt="Messenger">
+        </a>
+    </div>
+
+    <script src="JS/search.js"></script>
+    <script src="JS/SanPham.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

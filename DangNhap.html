@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G9sport</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="CssLogin.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- Phần navbar và footer lặp lại như Trang Home-->
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark shadow" style="background: linear-gradient(to right, #1a2235, #2c3e50);">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="Home.html">
+          <div class="logo">
+                    
+          G9sport
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="SanPham.html">Trang chủ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="Home.html"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Sản phẩm
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="SanPham.html">Vợt cầu lông</a>
+                </li>
+                <li><a class="dropdown-item" href="SanPham.html">Giày cầu lông</a></li>
+                <li>
+                  <a class="dropdown-item" href="Sa.html">Phụ Kiện khác</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="GioiThieu.html">Giới thiệu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Lienhe.html">Liên hệ</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="DangNhap.html"
+                ><i class="fas fa-sign-in-alt"></i> Đăng nhập</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="DangKy.html"
+                ><i class="fas fa-user-plus"></i> Đăng ký</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="GioHang.html">
+                Giỏ hàng
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1h1a.5.5 0 0 1 .485.379L2.89 5H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 14H4a.5.5 0 0 1-.491-.408L1.01 2H.5a.5.5 0 0 1-.5-.5zM3.14 6l1.25 6h8.22l1.25-6H3.14z"
+                  />
+                  <path
+                    d="M5.5 12a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 1a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Form đăng nhập -->
+    <div class="login-wrapper">
+      <div class="login-form">
+        <h2 class="text-center mb-4">Đăng Nhập</h2>
+        <form id="loginForm">
+          <!-- Ô nhập Email hoặc tên đăng nhập có thêm required -->
+          <div class="mb-3">
+            <label for="email" class="form-label"
+              >Email hoặc Tên đăng nhập</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="Nhập email"
+              required
+            />
+            <!-- Thông báo nếu chưa nhập -->
+            <div class="invalid-feedback">Vui lòng nhập email.</div>
+          </div>
+          <!-- Ô nhập mật khẩu có thêm required-->
+          <div class="mb-3">
+            <label for="password" class="form-label">Mật khẩu</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              name="password"
+              placeholder="Nhập mật khẩu"
+              required
+            />
+            <!-- Thông báo nếu chưa nhập -->
+            <div class="invalid-feedback">Vui lòng nhập mật khẩu.</div>
+          </div>
+          <!-- Ghi nhớ và quên mật khẩu -->
+          <div class="d-flex justify-content-between mb-3">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="rememberMe" />
+              <label class="form-check-label" for="rememberMe">Ghi nhớ</label>
+            </div>
+            <a href="#" class="text-decoration-none">Quên mật khẩu?</a>
+          </div>
+          <!-- Nút đăng nhập -->
+          <button type="submit" class="btn btn-primary
+     w-100">Đăng Nhập</button>
+          <!-- Link chuyển sang đăng ký -->
+          <p class="text-center mt-3">
+            Chưa có tài khoản?
+            <a href="DangKy.html" class="text-decoration-none">Đăng ký</a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <footer class="bg-dark text-white pt-5 pb-4">
+      <div class="container text-center text-md-start">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h5 class="text-uppercase fw-bold text-warning">
+              WEB BÁN VỢT CẦU LÔNG UY TÍN
+            </h5>
+            <hr
+              class="mb-3 mt-0 d-inline-block mx-auto"
+              style="width: 80px; background-color: #ffc107; height: 2px"
+            />
+            <p>
+              Cung cấp những cây vợt chính hãng, chất lượng cao
+              <br>
+              nhiều ưu đãi hấp dẫn
+            </p>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <h5 class="text-uppercase fw-bold text-warning">Liên hệ</h5>
+            <hr
+              class="mb-3 mt-0 d-inline-block mx-auto"
+              style="width: 80px; background-color: #ffc107; height: 2px"
+            />
+            <p>
+              <i class="fas fa-map-marker-alt me-2"></i> 140 Tây Thạnh, Tân Phú,
+              TP.HCM
+            </p>
+            <p><i class="fas fa-envelope me-2"></i> hotro@badmintonshop.vn</p>
+            <p><i class="fas fa-phone me-2"></i> 1900999999</p>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <h5 class="text-uppercase fw-bold text-warning">Mạng xã hội</h5>
+            <hr
+              class="mb-3 mt-0 d-inline-block mx-auto"
+              style="width: 80px; background-color: #ffc107; height: 2px"
+            />
+            <p>
+              <a href="#" class="text-white text-decoration-none me-3"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-white text-decoration-none me-3"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-white text-decoration-none me-3"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-white text-decoration-none"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+      </div>
+ 
+      <div
+        class="text-center py-3"
+        style="background-color: rgba(255, 255, 255, 0.05)"
+      >
+        © 2025 Web bán vợt cầu lông. All rights reserved.
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Nhúng JavaScript phần localStorage -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const loginForm = document.getElementById("loginForm");
+        // Xử lý khi form được submit
+        loginForm.addEventListener("submit", function (e) {
+          e.preventDefault(); // Ngăn chặn reload trang
+          // Lấy dữ liệu nhập vào
+          const emailInput = loginForm.querySelector('input[name="email"]');
+          const passwordInput = loginForm.querySelector(
+            'input[name="password"]'
+          );
+
+          const username = emailInput.value.trim();
+          const password = passwordInput.value.trim();
+          // Lấy danh sách người dùng từ localStorage (đã đăng ký trước đó)
+          const users = JSON.parse(localStorage.getItem("users")) || [];
+          // Tìm người dùng trùng username/email và mật khẩu
+          const user = users.find(
+            (u) =>
+              (u.username === username || u.email === username) &&
+              u.password === password
+          );
+          // Nếu tìm thấy => đăng nhập thành công
+          if (user) {
+            alert("Đăng nhập thành công!");
+
+            localStorage.setItem("currentUser", JSON.stringify(user));
+
+            window.location.href = "Home.html"; // chuyển hướng sau khi đăng nhập
+          } else {
+            // Nếu không đúng thì thông báo lỗi
+            alert("Tên đăng nhập hoặc mật khẩu không đúng!");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

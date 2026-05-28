@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng Của Bạn - Cửa Hàng Vợt Cầu Lông Chuyên Nghiệp</title>
+    <link href="CSS/style.css" rel="stylesheet">
+    <link href="CSS/GioHang.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+        <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="logo">
+                    G9sport
+                </div>
+                <div class="header-right">
+                    <div class="search-box">
+                        <input type="text" placeholder="Tìm kiếm...">
+                        <button type="submit">🔍</button>
+                    </div>
+                    <div class="user-actions">
+                        <a href="GioHang.html" class="cart-icon" id="viewCartBtn">🛒(<span id="cartCount">0</span>)</a>
+                        <a href="Admin.html">👤</a>
+                        <a href="#">❤️</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="nav-container">
+                <ul class="nav-menu">
+                    <li><a href="Home.html" class="active">Trang chủ</a></li>
+                    <li><a href="HotNew.html">NEW & Nổi Bật</a></li>
+                    <li><a href="TrangSanPham.html">Sản Phẩm</a></li>
+                    <li><a href="Gioithieu.html">GioiThieu</a></li>
+                    <li><a href="tintuc.html">Tin tức</a></li>
+                    <li><a href="Lienhe.html">Liên hệ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cart-section" class="cart-section">
+            <div class="container">
+               <div class="text-start mb-3"> 
+                    <a href="Home.html" class="btn btn-outline-secondary">
+                        <i class="bi bi-arrow-left"></i> Tiếp tục mua sắm
+                    </a>
+                </div>
+                <h2><i class="bi bi-cart"></i> Giỏ hàng của bạn</h2>
+                <div id="cartItems" class="cart-items"></div>
+                <div class="cart-summary">
+                    <p>Tổng cộng: <span id="cartTotal">0 VNĐ</span></p>
+                    <button id="checkoutBtn" class="btn btn-primary">Tiến hành đặt hàng</button>
+                    <button id="clearCartBtn" class="btn btn-danger">Xóa hết giỏ hàng</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="checkout-section" class="checkout-section hidden">
+            <div class="container">
+                <h2>Thông Tin Đặt Hàng</h2>
+                <form id="checkoutForm">
+                    <div class="form-group">
+                        <label for="customerName">Họ và Tên:</label>
+                        <input type="text" id="customerName" name="customerName" placeholder="tối thiểu 10 ký tự, không chứa ký tự đặc biệt" required>
+                        <div class="error-message warning" id="errorName"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerPhone">Số điện thoại:</label>
+                        <input type="tel" id="customerPhone" name="customerPhone" placeholder="[0-9]{10}" required>
+                        <div class="error-message" id="errorPhone" style="display: none;"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerAddress">Địa chỉ giao hàng:</label>
+                        <textarea id="customerAddress" name="customerAddress" rows="3" required></textarea>
+                        <div class="error-message" id="errorAddress" style="display: none;"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="paymentMethod">Phương thức thanh toán:</label>
+                        <select id="paymentMethod" name="paymentMethod" required>
+                            <option value="COD">Thanh toán khi nhận hàng (COD)</option>
+                            <option value="Bank Transfer">Chuyển khoản ngân hàng</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-success">Hoàn tất đặt hàng</button>
+                    <button type="button" id="backToCartBtn" class="btn btn-secondary">Quay lại giỏ hàng</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Liên hệ</h3>
+                    <p>📍 Địa chỉ: [Địa chỉ cửa hàng]</p>
+                    <p>📞 Hotline: [Số điện thoại]</p>
+                    <p>✉️ Email: [Email liên hệ]</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Chính sách</h3>
+                    <a href="#">Chính sách bảo hành</a>
+                    <a href="#">Chính sách đổi trả</a>
+                    <a href="#">Chính sách giao hàng</a>
+                    <a href="#">Chính sách bảo mật</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Hỗ trợ</h3>
+                    <a href="#">Hướng dẫn mua hàng</a>
+                    <a href="#">Hướng dẫn thanh toán</a>
+                    <a href="#">Câu hỏi thường gặp</a>
+                    <a href="#">Tư vấn chọn vợt</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Theo dõi chúng tôi</h3>
+                    <a href="#">📘 Facebook</a>
+                    <a href="#">📷 Instagram</a>
+                    <a href="#">📺 YouTube</a>
+                    <a href="#">📱 Zalo</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="JS/fontawesome.min.js"></script>
+    <script src="JS/GioHang.js"></script>
+</body>
+</html>

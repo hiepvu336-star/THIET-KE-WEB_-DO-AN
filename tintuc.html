@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tin Tức Nổi Bật</title>
+  <link href="CSS/tintuc.css" rel="stylesheet" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="CSS/all.min.css">
+  <link href="font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    
+
+</head>
+<body>
+    <!---Header-->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="logo">
+
+                    G9sport
+                </div>
+                <div class="header-right">
+                    <div class="search-box">
+                        <form class="d-flex">
+                            <input class="form-control  me-2" id="searchInput" type="text" placeholder="Tìm kiếm...">
+                            <button class="btn btn-outline-light" type="submit">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+          <div class="user-actions">
+                    <a href="GioHang.html" class="cart-icon">🛒</a>
+                    <a href="Admin.html">👤</a>
+                    <li class="has-submenu">
+                        <a href="#">💁‍♂️</a>
+                        <div class="submenu">
+                            <a href="DangNhap.html"> Đăng Xuất</a>
+
+                        </div>
+                    </li>
+
+
+                </div>
+            </div>
+        </div>
+        </div>
+        <nav class="main-nav">
+            <div class="nav-container">
+                <ul class="nav-menu">
+                    <li><a href="Home.html">Trang chủ</a></li>
+                    <li><a href="HotNew.html">NEW & HOT</a></li>
+                    <li class="has-submenu">
+                        <a href="TrangSanPham.html">Sản phẩm</a>
+                    </li>
+                    <li><a href="Gioithieu.html">Giới Thiệu</a></li>
+                    <li><a href="#" class="active">Tin tức</a></li>
+                    <li><a href="Lienhe.html">Liên hệ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+  <main style="margin-top: 150px;">
+    <section class="news-carousel container">
+      <h2 class="text-center mb-5" style="font-weight: bold; color: #0d1b2a;">Tin tức nổi bật</h2>
+      <div id="newsWrapper" class="d-flex align-items-center justify-content-center">
+        <button class="carousel-btn me-3" onclick="changeSlide(-1)">&lt;</button>
+        <div id="newsSlide" class="news-slide"></div>
+        <button class="carousel-btn ms-3" onclick="changeSlide(1)">&gt;</button>
+      </div>
+    </section>
+
+    <section class="container d-flex flex-column flex-md-row gap-4">
+      <div class="flex-fill">
+        <h2 class="fw-bold">Tất cả tin tức</h2>
+        <div class="news-grid">
+          <!-- Mỗi tin tức bên dưới -->
+           <a href="tintucgia.html" class="text-decoration-none text-dark">
+          <div class="news-card">
+            <img src="https://cdn.shopvnb.com/uploads/images/tin_tuc/top-cac-thuong-hieu-giay-cau-long-dep-va-ben-duoc-yeu-thich-nhat-hien-nay-1.webp" alt="">
+            <div class="news-overlay">
+              <span>📅 10 Tháng 6, 2025</span>
+              <h5>Các Thương Hiệu Giày Cầu Lông Hàng Đầu Và Sản...</h5>
+            </div>
+          </div>
+        </a>
+          <a href="tintucgia.html" class="text-decoration-none text-dark">
+          <div class="news-card">
+            <img src="https://mcdn.coolmate.me/image/July2023/loi-ich-cua-cau-long_599.jpg" alt="">
+            <div class="news-overlay">
+              <span>📅 10 Tháng 6, 2025</span>
+              <h5>Cùng tìm hiểu 5 lợi ích của việc chơi cầu lông</h5>
+            </div>
+          </div>
+        </a>
+        <a href="tintucgia.html" class="text-decoration-none text-dark">
+          <div class="news-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH32mcz1l8RUQ9aumpNhqekGnoLpg8F9oNWw&s" alt="">
+            <div class="news-overlay">
+              <span>📅 10 Tháng 6, 2025</span>
+              <h5>Giày Cầu Lông Giá Rẻ: Top Các Thương Hiệu...</h5>
+            </div>
+          </div>
+          </a>
+          <a href="tintucgia.html" class="text-decoration-none text-dark">
+          <div class="news-card">
+            <img src="image_Kumpoo/Kumpoo (1).webp" alt="">
+            <div class="news-overlay">
+              <span>📅 7 Tháng 6, 2025</span>
+              <h5>Top 5 Vợt Cầu Lông Kumpoo Giá Rẻ...</h5>
+            </div>
+          </div>
+          </a>
+          <a href="tintucgia.html" class="text-decoration-none text-dark">
+          <div class="news-card">
+            <img src="image_Lining/Lining (1).webp" alt="">
+            <div class="news-overlay">
+              <span>📅 7 Tháng 6, 2025</span>
+              <h5>Top 5 vợt cầu lông Lining cao cấp...</h5>
+            </div>
+          </div>
+        </a>
+        <a href="tintucgia.html" class="text-decoration-none text-dark">
+          <div class="news-card">
+            <img src="https://media3.scdn.vn/img4/2023/12_28/1uNzfNFy8p9RdAQ4kx60_simg_de2fe0_250x250_maxb.jpg" alt="">
+            <div class="news-overlay">
+              <span>📅 7 Tháng 6, 2025</span>
+              <h5>Gợi ý 10 cây vợt cầu lông Yonex giá rẻ...</h5>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+      <aside style="width: 280px;">
+        <div class="news-sidebar">
+          <h5>Danh mục</h5>
+          <a href="tintucgia.html">Bản tin cầu lông trong nước và thế giới →</a>
+          <a href="tintucgia.html">Chính sách của Fbshop →</a>
+          <a href="tintucgia.html">Kiến thức về cầu lông →</a>
+          <a href="tintucgia.html">Kiến thức về sân cầu lông →</a>
+          <a href="tintucgia.html">Review cầu lông →</a>
+          <a href="tintucgia.html">Sân cầu lông →</a>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <!-- Footer giữ nguyên -->
+      <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Liên hệ</h3>
+                    <p>📍 Địa chỉ: [Địa chỉ cửa hàng]</p>
+                    <p>📞 Hotline: [Số điện thoại]</p>
+                    <p>✉️ Email: [Email liên hệ]</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Chính sách</h3>
+                    <a href="#">Chính sách bảo hành</a>
+                    <a href="#">Chính sách đổi trả</a>
+                    <a href="#">Chính sách giao hàng</a>
+                    <a href="#">Chính sách bảo mật</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Hỗ trợ</h3>
+                    <a href="#">Hướng dẫn mua hàng</a>
+                    <a href="#">Hướng dẫn thanh toán</a>
+                    <a href="#">Câu hỏi thường gặp</a>
+                    <a href="#">Tư vấn chọn vợt</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Theo dõi chúng tôi</h3>
+                    <a href="#">📘 Facebook</a>
+                    <a href="#">📷 Instagram</a>
+                    <a href="#">📺 YouTube</a>
+                    <a href="#">📱 Zalo</a>
+                </div>
+            </div>
+             <div class="contact-fixed">
+        <a href="tel:[Số điện thoại của bạn]" class="contact-icon phone-icon" aria-label="Gọi điện">
+            <img src="https://png.pngtree.com/png-vector/20191027/ourmid/pngtree-calling-telephone-line-icon-vector-png-image_1885981.jpg" alt="Điện thoại">
+        </a>
+        <a href="https://zalo.me/[Số Zalo của bạn]" target="_blank" class="contact-icon zalo-icon" aria-label="Chat Zalo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Icon_of_Zalo.svg/800px-Icon_of_Zalo.svg.png" alt="Zalo">
+        </a>
+        <a href="https://m.me/[ID Facebook Messenger của bạn]" target="_blank" class="contact-icon messenger-icon" aria-label="Chat Messenger">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/2048px-2023_Facebook_icon.svg.png" alt="Messenger">
+        </a>
+    </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 G9sports Store. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+   
+    
+    <script src="JS/tintuc.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const filterLinks = document.querySelectorAll(".filter-link");
+    const products = document.querySelectorAll(".col-md-3[data-category]");
+
+    filterLinks.forEach(link => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const filter = this.getAttribute("data-filter");
+
+        products.forEach(product => {
+          if (filter === "all" || product.getAttribute("data-category") === filter) {
+            product.style.display = "block";
+          } else {
+            product.style.display = "none";
+          }
+        });
+      });
+    });
+  });
+</script>
+
+<script>
+  document.querySelectorAll('.filter-price').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const min = parseInt(this.getAttribute('data-min'));
+      const max = parseInt(this.getAttribute('data-max'));
+
+      document.querySelectorAll('[data-price]').forEach(product => {
+        const price = parseInt(product.getAttribute('data-price'));
+        if (price >= min && price <= max) {
+          product.style.display = 'block';
+        } else {
+          product.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+<!--Tìm kiếm sản phẩm-->
+<script>
+  // Bắt sự kiện form tìm kiếm
+  document.querySelector("form.d-flex").addEventListener("submit", function(e) {
+    e.preventDefault();
+    
+    const keyword = document.getElementById("searchInput").value.toLowerCase().trim();
+    
+    // Lặp qua tất cả sản phẩm
+    document.querySelectorAll('[data-name]').forEach(product => {
+      const name = product.getAttribute('data-name').toLowerCase();
+      
+      if (name.includes(keyword)) {
+        product.style.display = 'block';
+      } else {
+        product.style.display = 'none';
+      }
+    });
+  });
+</script>
+ <!-- JS dropdown account -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const accountToggle = document.querySelector('.account-toggle');
+            const accountDropdown = document.querySelector('.account-dropdown');
+
+            if (accountToggle && accountDropdown) {
+                accountToggle.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    accountDropdown.classList.toggle('open');
+                });
+
+                // Đóng dropdown khi click ra ngoài
+                document.addEventListener('click', function (e) {
+                    if (!accountDropdown.contains(e.target)) {
+                        accountDropdown.classList.remove('open');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+
